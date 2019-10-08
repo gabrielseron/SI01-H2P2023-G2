@@ -7,11 +7,6 @@ const pseudoTxt = document.querySelector("#pseudoTxt")
 const createAccountWatcher = document.querySelector(".createAccountWatcher")
 
 
-let choiceRole=0
-// 1 = Watcher
-// 2 = Player
-
-
 imgWatcher.addEventListener(
   "mouseover",
   function(){
@@ -62,30 +57,29 @@ imgWatcher.addEventListener(
     txtPresentation.style.display="block"
     createAccountWatcher.style.opacity="1"
     createAccountWatcher.style.transition="all 4s"
-    pseudoTxt.style.opacity="1"
-    pseudoTxt.style.transition="all 4s"
+
+    // Function Random Pseudo
+    setTimeout(writePseudo, 2000)
+    function writePseudo(){
+      const inputPseudo = document.querySelector("#inputPseudo")
+
+      let pseudo = ["hack3r", "g33k", "cyb3r", "anonymØus", "fr3dØ_laManØ", "bØubØu", "bØgØ$$", "BØ$$", "NéØ", "MatriX", "MØrpheus"],
+          numberPseudo=Math.floor(Math.random()* 8999+1000)
+
+      let pseudoJoueur = pseudo[Math.floor(Math.random()*pseudo.length+1)]+"_"+numberPseudo
+
+      pseudoTxt.innerText="Voici votre pseudo généré = "+pseudoJoueur
+
+      inputPseudo.setAttribute("placeholder", pseudoJoueur)
+      inputPseudo.setAttribute("disabled", " ")
+      pseudoTxt.style.display="block"
+    }
   }
 )
 
 imgPlayer.addEventListener(
   "click",
   function(){
-    
+
   }
 )
-
-
-
-// Function Random Pseudo
-
-const inputPseudo = document.querySelector("#inputPseudo")
-
-let pseudo = ["hack3r", "g33k", "cyb3r", "anonymØus", "fr3dØ_laManØ", "bØubØu", "bØgØ$$", "BØ$$", "NéØ", "MatriX", "MØrpheus"],
-    numberPseudo=Math.floor(Math.random()* 8999+1000)
-
-let pseudoJoueur = pseudo[Math.floor(Math.random()*pseudo.length+1)]+"_"+numberPseudo
-
-pseudoTxt.innerText="Voici votre pseudo généré = "+pseudoJoueur
-
-inputPseudo.setAttribute("placeholder", pseudoJoueur)
-inputPseudo.setAttribute("disabled", " ")
