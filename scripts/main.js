@@ -70,20 +70,7 @@ imgWatcher.addEventListener(
 imgPlayer.addEventListener(
   "click",
   function(){
-    imgWatcher.style.transform="translateX(-100%)"
-    imgWatcher.style.opacity="0"
-    imgWatcher.style.transition="all 1s"
-    imgNerve.style.transform="translateX(-100%)"
-    imgNerve.style.opacity="0"
-    imgNerve.style.transition="all 1s"
-    imgPlayer.style.width="600px"
-    imgPlayer.style.transform="translateX(-30%)translateY(-250%)"
-    imgPlayer.style.opacity="1"
-    imgPlayer.style.transition="all 1s"
-    txtChoisisRole.style.opacity="0"
-    txtChoisisRole.style.transition="all 1s"
-    txtPresentation.style.display="block"
-    pseudoTxt.style.display="block"
+    
   }
 )
 
