@@ -7,6 +7,29 @@ body{
   background-color: black;
 }
 
+.createAccountWatcher{
+  opacity: 0;
+  position: absolute;
+  top : 50%;
+  left : 40%;
+}
+
+.createAccountWatcher input{
+  width : 200px;
+  height: 30px;
+}
+
+#buttonStartWatcherAccount{
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  border-radius: 5%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .bloc{
   width: 100%;
   display: flex;
@@ -51,4 +74,32 @@ body{
 
 .opacityOFF{
   opacity: .6;
+}
+
+#txtPresentation{
+  display: none;
+  position: absolute;
+  top : 35%;
+  left : 27%;
+  animation : type 1.7s steps(22);
+  overflow : hidden;
+  white-space : nowrap;
+  border-right: 4px solid white;
+  width : 30ch;
+
+}
+@keyframes type {
+  0% {
+    width:0ch;
+  }
+  100% {
+    width: 30ch;
+  }
+}
+
+#pseudoTxt{
+  opacity : 0;
+  position: absolute;
+  top : 42%;
+  left : 27%;
 }

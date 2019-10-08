@@ -2,6 +2,10 @@ const imgWatcher = document.querySelector("#watcherIMG")
 const imgPlayer = document.querySelector("#playerIMG")
 const imgNerve = document.querySelector("#nerveIMG")
 const txtChoisisRole = document.querySelector(".containerTxt h3")
+const txtPresentation = document.querySelector("#txtPresentation")
+const pseudoTxt = document.querySelector("#pseudoTxt")
+const createAccountWatcher = document.querySelector(".createAccountWatcher")
+
 
 let choiceRole=0
 // 1 = Watcher
@@ -55,7 +59,11 @@ imgWatcher.addEventListener(
     imgWatcher.style.transition="all 1s"
     txtChoisisRole.style.opacity="0"
     txtChoisisRole.style.transition="all 1s"
-    choiceRole = 1
+    txtPresentation.style.display="block"
+    createAccountWatcher.style.opacity="1"
+    createAccountWatcher.style.transition="all 4s"
+    pseudoTxt.style.opacity="1"
+    pseudoTxt.style.transition="all 4s"
   }
 )
 
@@ -74,14 +82,23 @@ imgPlayer.addEventListener(
     imgPlayer.style.transition="all 1s"
     txtChoisisRole.style.opacity="0"
     txtChoisisRole.style.transition="all 1s"
-    choiceRole = 2
+    txtPresentation.style.display="block"
+    pseudoTxt.style.display="block"
   }
 )
 
-if(choiceRole==1){
-  console.log("wsh")
-  window.alert("watcher")
-}
-if(choiceRole==2){
-  window.alert("player")
-}
+
+
+// Function Random Pseudo
+
+const inputPseudo = document.querySelector("#inputPseudo")
+
+let pseudo = ["hack3r", "g33k", "cyb3r", "anonymØus", "fr3dØ_laManØ", "bØubØu", "bØgØ$$", "BØ$$", "NéØ", "MatriX", "MØrpheus"],
+    numberPseudo=Math.floor(Math.random()* 8999+1000)
+
+let pseudoJoueur = pseudo[Math.floor(Math.random()*pseudo.length+1)]+"_"+numberPseudo
+
+pseudoTxt.innerText="Voici votre pseudo généré = "+pseudoJoueur
+
+inputPseudo.setAttribute("placeholder", pseudoJoueur)
+inputPseudo.setAttribute("disabled", " ")
