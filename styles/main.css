@@ -1,0 +1,54 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: "Niramit", "Arial", sans-serif;
+  font-size: 16px;
+  color: #e2e1de;
+  background-color: black;
+}
+
+.bloc{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.containerNerve{
+  width : 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: clumn;
+  margin-top : 200px;
+}
+
+.containerTxt{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  opacity: .8;
+}
+
+.containerWatcherPlayer{
+  width : 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.containerNerve img{
+  width : 600px;
+  height: auto;
+}
+
+.containerWatcherPlayer img{
+  width : 400px;
+  height: auto;
+}
+
+/* OPACITY JS */
+
+.opacityON{
+  opacity: 1;
+}
+
+.opacityOFF{
+  opacity: .6;
+}
