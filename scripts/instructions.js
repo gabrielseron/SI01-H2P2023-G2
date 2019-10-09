@@ -11,8 +11,11 @@ const txtInstructionsSEVEN = document.querySelectorAll('.seven p')
 let txtInstructionsItems = [txtInstructionsONE,txtInstructionsTWO,txtInstructionsTHREE,txtInstructionsFOUR,txtInstructionsFIVE,txtInstructionsSIX,txtInstructionsSEVEN]
 
 //const buttons = document.querySelectorAll("")
-//let y=0
+//let y=1
 //let nextButton = buttons[y]
+let txtInstructionsBlock = txtinstructionsBlocks[0]
+let txtInstructions = txtInstructionsItems[0]
+
 
 //FONCTION POUR AFFICHER L'INSTRUCTION SUIVANTE
 
@@ -44,6 +47,5 @@ let txtInterval = setInterval(writing, 2000)
         clearInterval('txtInterval')
       }
     }
-
 
   //FONCTION D'AFFICHAGE DES PAGES WEB
