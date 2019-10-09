@@ -7,7 +7,7 @@ const pseudoTxt = document.querySelector("#pseudoTxt")
 const createAccountWatcher = document.querySelector(".createAccountWatcher")
 const alertPannel = document.querySelector(".containerAlertPannel")
 const buttonOkAlertPannel = document.querySelector(".containerTxtAlertPannel h2")
-const gif = document.querySelector(".containerGif img")
+const containerGif = document.querySelector(".containerGif")
 
 
 imgWatcher.addEventListener(
@@ -52,7 +52,7 @@ imgWatcher.addEventListener(
     imgNerve.style.opacity="0"
     imgNerve.style.transition="all 1s"
     imgWatcher.style.width="600px"
-    imgWatcher.style.transform="translateY(-250%)translateX(40%)"
+    imgWatcher.style.transform="translateY(-200%)translateX(40%)"
     imgWatcher.style.opacity="1"
     imgWatcher.style.transition="all 1s"
     txtChoisisRole.style.opacity="0"
@@ -60,6 +60,7 @@ imgWatcher.addEventListener(
     txtPresentation.style.display="block"
     createAccountWatcher.style.opacity="1"
     createAccountWatcher.style.transition="all 4s"
+    containerGif.style.display="none"
 
     // Function Random Pseudo
     setTimeout(writePseudo, 2000)
@@ -70,7 +71,7 @@ imgWatcher.addEventListener(
           numberPseudo=Math.floor(Math.random()* 8999+1000)
 
       let pseudoJoueur = pseudo[Math.floor(Math.random()*pseudo.length)]+"_"+numberPseudo
-
+      localStorage.setItem("pseudoJoueur", pseudoJoueur)
       pseudoTxt.innerText="Voici votre pseudo généré = "+pseudoJoueur
 
       inputPseudo.setAttribute("placeholder", pseudoJoueur)
@@ -96,11 +97,32 @@ buttonOkAlertPannel.addEventListener(
 
 // GIF
 
-
 imgWatcher.addEventListener(
   "mouseover",
   function(){
-    gif.removeAttribute("src")
-    gif.getAttribute("src", "images/danger.png")
+    containerGif.classList.remove("bgNerve")
+    containerGif.classList.add("bgWatcher")
+  }
+)
+imgWatcher.addEventListener(
+  "mouseout",
+  function(){
+    containerGif.classList.add("bgNerve")
+    containerGif.classList.remove("bgWatcher")
+  }
+)
+
+imgPlayer.addEventListener(
+  "mouseover",
+  function(){
+    containerGif.classList.remove("bgNerve")
+    containerGif.classList.add("bgPlayer")
+  }
+)
+imgPlayer.addEventListener(
+  "mouseout",
+  function(){
+    containerGif.classList.add("bgNerve")
+    containerGif.classList.remove("bgPlayer")
   }
 )

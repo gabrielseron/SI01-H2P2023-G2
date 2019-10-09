@@ -1,7 +1,8 @@
 const joueurPseudo = document.querySelectorAll(".joueurPseudo")
-const defi=document.querySelectorAll(".containerDefi")
+const defi=document.querySelectorAll(".defi")
 const defiBackground=document.querySelectorAll(".defiBackground")
 const displayNoneDefi = document.querySelector(".displayNoneDefi")
+const containerGifDefi = document.querySelector(".containerGifDefi")
 
 // RANDOM PSEUDO
 
@@ -41,7 +42,7 @@ for(let i=0; i<nombreViewers.length; i++){
 }
 
 
-let variationViewers = setInterval(variation, 1000)
+/*let variationViewers = setInterval(variation, 1000)
 
 function variation(){
   for(let i=0; i<nombreViewers.length; i++){
@@ -49,7 +50,7 @@ function variation(){
     tabNomnbreViewers[i]=tabNomnbreViewers[i]+Math.floor((nombrePlusMoins/100))
     nombreViewers[i].innerText=tabNomnbreViewers[i]+"K"
   }
-}
+}*/
 
 //CLICK ON PLAYER
 
@@ -135,4 +136,81 @@ joueurLive[2].addEventListener(
     listeJoueurs.style.top="0%"
   }
 )
+}
+
+// ESPACE DEFI
+
+const pseudoJoueur = document.querySelector(".containerCredits h1")
+const credits = document.querySelector(".containerCredits h2")
+
+let creditsJoueur=300
+
+pseudoJoueur.innerText=localStorage.pseudoJoueur
+credits.innerText="Vos crédits : "+creditsJoueur+"K"
+
+
+// CHOIX DEFI
+
+let kissDone=false,
+    tatouageDone=false,
+    chuteDone=false
+
+for(let i=0; i<defi.length; i++){
+  defi[0].addEventListener(
+    "click",
+    function(){
+      containerGifDefi.classList.add("bgKiss")
+      containerGifDefi.classList.remove("bgTatouage")
+      containerGifDefi.classList.remove("bgChute")
+      if(kissDone==false){
+        creditsJoueur=creditsJoueur-50
+        credits.innerText="Vos crédits : "+Math.trunc(creditsJoueur)+"K"
+        kissDone=true
+      }
+      defi[0].style.opacity=".2"
+      defi[0].style.transition="all .3s"
+    }
+  )
+}
+
+for(let i=0; i<defi.length; i++){
+  defi[1].addEventListener(
+    "click",
+    function(){
+      containerGifDefi.classList.add("bgTatouage")
+      containerGifDefi.classList.remove("bgChute")
+      containerGifDefi.classList.remove("bgKiss")
+      if(tatouageDone==false){
+        creditsJoueur=creditsJoueur-100
+        credits.innerText="Vos crédits : "+Math.trunc(creditsJoueur)+"K"
+        tatouageDone=true
+      }
+      defi[1].style.opacity=".2"
+      defi[1].style.transition="all .3s"
+    }
+  )
+}
+for(let i=0; i<defi.length; i++){
+  defi[2].addEventListener(
+    "click",
+    function(){
+      containerGifDefi.classList.add("bgChute")
+      containerGifDefi.classList.remove("bgTatouage")
+      containerGifDefi.classList.remove("bgKiss")
+      if(chuteDone==false){
+        creditsJoueur=creditsJoueur-150
+        credits.innerText="Vos crédits : "+Math.trunc(creditsJoueur)+"K"
+        chuteDone=true
+      }
+      defi[2].style.opacity=".2"
+      defi[2].style.transition="all .3s"
+    }
+  )
+}
+
+if(creditsJoueur==0){
+  setTimeout(msgErreur, 2000)
+  function msgErreur(){
+    
+  }
 }
