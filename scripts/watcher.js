@@ -3,6 +3,8 @@ const defi=document.querySelectorAll(".defi")
 const defiBackground=document.querySelectorAll(".defiBackground")
 const displayNoneDefi = document.querySelector(".displayNoneDefi")
 const containerGifDefi = document.querySelector(".containerGifDefi")
+const containerMsgErreur = document.querySelector(".containerMsgErreur")
+const espaceDefi = document.querySelector(".espaceDefi")
 
 // RANDOM PSEUDO
 
@@ -42,7 +44,7 @@ for(let i=0; i<nombreViewers.length; i++){
 }
 
 
-/*let variationViewers = setInterval(variation, 1000)
+let variationViewers = setInterval(variation, 1000)
 
 function variation(){
   for(let i=0; i<nombreViewers.length; i++){
@@ -50,7 +52,7 @@ function variation(){
     tabNomnbreViewers[i]=tabNomnbreViewers[i]+Math.floor((nombrePlusMoins/100))
     nombreViewers[i].innerText=tabNomnbreViewers[i]+"K"
   }
-}*/
+}
 
 //CLICK ON PLAYER
 
@@ -72,6 +74,7 @@ for(let i=0; i<joueurLive.length; i++){
       joueurBackground[2].style.transition="all 1s"
       joueurBackground[2].style.opacity="0"
       displayNoneDefi.style.display="block"
+      espaceDefi.style.display="flex"
       /*for(let j=0; j<2; j++){
         defi[j].style.opacity="1"
         defi[j].style.transition="all 3s"
@@ -169,6 +172,12 @@ for(let i=0; i<defi.length; i++){
       }
       defi[0].style.opacity=".2"
       defi[0].style.transition="all .3s"
+      if(creditsJoueur==0){
+        setTimeout(msgErreur, 4000)
+        function msgErreur(){
+          containerMsgErreur.style.display="block"
+        }
+      }
     }
   )
 }
@@ -187,6 +196,12 @@ for(let i=0; i<defi.length; i++){
       }
       defi[1].style.opacity=".2"
       defi[1].style.transition="all .3s"
+      if(creditsJoueur==0){
+        setTimeout(msgErreur, 4000)
+        function msgErreur(){
+          containerMsgErreur.style.display="block"
+        }
+      }
     }
   )
 }
@@ -204,13 +219,12 @@ for(let i=0; i<defi.length; i++){
       }
       defi[2].style.opacity=".2"
       defi[2].style.transition="all .3s"
+      if(creditsJoueur==0){
+        setTimeout(msgErreur, 4000)
+        function msgErreur(){
+          containerMsgErreur.style.display="block"
+        }
+      }
     }
   )
-}
-
-if(creditsJoueur==0){
-  setTimeout(msgErreur, 2000)
-  function msgErreur(){
-    
-  }
 }

@@ -516,3 +516,10 @@ input.submit_9{
   text-transform: uppercase;
   border-radius: 20px;
 }
+
+/*
+AFFICHAGE DES PAGES
+*/
+.pageDisplay{
+  display: none;
+}

@@ -91,7 +91,7 @@ body{
 }
 
 .bgPlayer{
-  background-image: url(../images/player.gif);  
+  background-image: url(../images/player.gif);
 }
 
 /* OPACITY JS */
@@ -109,7 +109,7 @@ body{
   position: absolute;
   top : 35%;
   left : 27%;
-  animation : type 1.7s steps(22);
+  animation : type 1.2s steps(22);
   overflow : hidden;
   white-space : nowrap;
   border-right: 4px solid white;
@@ -130,7 +130,7 @@ body{
   position: absolute;
   top : 42%;
   left : 27%;
-  animation : type 1.7s steps(20);
+  animation : type 1.2s steps(20);
   overflow : hidden;
   white-space : nowrap;
   border-right: 4px solid white;
@@ -197,4 +197,109 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.containerVideo{
+  z-index: 3;
+  position: relative;
+  border : 2px solid #F3F302;
+  width : 1%;
+  height: 1%;
+  background: black;
+  position: absolute;
+  top : 15%;
+  left : 15%;
+  display: none;
+  justify-content: center;
+  flex-direction: center;
+  align-items: center;
+  animation-name : shake;
+  animation-duration: .4s;
+  animation-iteration-count: 2;
+}
+
+.playButton{
+  position: absolute;
+  width : 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playButton img{
+  width : 400px;
+}
+
+.skipButton{
+  z-index: 1;
+  width : 150px;
+  height: 50px;
+  background-color: black;
+  border : 3px solid #FFFF00;
+  position: absolute;
+  top : 85%;
+  left : 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msgReady{
+  z-index: 1;
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  background-color: black;
+  border: 1px solid red;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.msgReady h1{
+  text-align: center;
+}
+
+.containerButtonReadyBack{
+  width : 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttonReady{
+  width : 100px;
+  height: 50px;
+  border : 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonReady a{
+  color : white;
+  text-decoration: none;
+}
+
+.buttonReady:hover{
+  background-color: red
+}
+
+.buttonBack{
+  width : 100px;
+  height: 50px;
+  border : 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonBack a{
+  color : white;
+  text-decoration: none;
+}
+
+.buttonBack:hover{
+  background-color: red
 }
