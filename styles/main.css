@@ -7,6 +7,27 @@ body{
   background-color: black;
 }
 
+.alertPannel{
+  width : 100%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  z-index: 1;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alertPannel img{
+  width : 200px;
+  height: 200px;
+}
+
+.alertPannel h1{
+  color : #F3F302;
+}
+
 .createAccountWatcher{
   opacity: 0;
   position: absolute;
@@ -62,12 +83,12 @@ body{
 }
 
 .containerNerve img{
-  width : 600px;
+  width : 50%;
   height: auto;
 }
 
 .containerWatcherPlayer img{
-  width : 400px;
+  width : 35%;
   height: auto;
 }
 

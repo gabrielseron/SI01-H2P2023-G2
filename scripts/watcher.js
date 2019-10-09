@@ -44,7 +44,7 @@ let variationViewers = setInterval(variation, 1000)
 function variation(){
   for(let i=0; i<nombreViewers.length; i++){
     let nombrePlusMoins = (Math.floor(Math.random()*89+1))*(Math.floor(Math.random()*3-1))
-    tabNomnbreViewers[i]=tabNomnbreViewers[i]+Math.floor((nombrePlusMoins/100))
+    tabNomnbreViewers[i]=tabNomnbreViewers[i]+Math.floor((nombrePlusMoins/1000))
     nombreViewers[i].innerText=tabNomnbreViewers[i]+"K"
   }
 }

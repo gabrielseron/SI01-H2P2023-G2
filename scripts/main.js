@@ -5,7 +5,7 @@ const txtChoisisRole = document.querySelector(".containerTxt h3")
 const txtPresentation = document.querySelector("#txtPresentation")
 const pseudoTxt = document.querySelector("#pseudoTxt")
 const createAccountWatcher = document.querySelector(".createAccountWatcher")
-
+const alertPannel = document.querySelector(".alertPannel")
 
 imgWatcher.addEventListener(
   "mouseover",
@@ -80,6 +80,6 @@ imgWatcher.addEventListener(
 imgPlayer.addEventListener(
   "click",
   function(){
-
+    alertPannel.style.display="block"
   }
 )
