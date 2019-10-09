@@ -71,6 +71,8 @@ body{
   height: auto;
 }
 
+
+
 .containerGif{
   width : 35%;
   height: 230px;
@@ -80,9 +82,16 @@ body{
   justify-content: center;
 }
 
-.containerGif img{
-  width: 90%;
-  height : auto;
+.bgNerve{
+  background-image: url(../images/nerve.gif);
+}
+
+.bgWatcher{
+  background-image: url(../images/watcher.gif);
+}
+
+.bgPlayer{
+  background-image: url(../images/player.gif);  
 }
 
 /* OPACITY JS */
