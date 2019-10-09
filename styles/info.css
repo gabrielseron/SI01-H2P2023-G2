@@ -295,3 +295,14 @@ position: absolute;
   text-align: center;
   padding-top: 30px;
 }
+
+#scroll_top{
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  bottom:0;
+  position: fixed;
+  color: white;
+  font-size: 30px;
+  z-index: 10;
+}

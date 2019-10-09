@@ -2,6 +2,16 @@
 let casting=document.getElementById('casting_description')
 let video=document.getElementById('video')
 let replay=document.getElementById('replay')
+let scroll_top=document.getElementById('scroll_top')
+
+
+
+scroll_top.addEventListener('click',function(){
+window.scrollTo({ top: 0, behavior: 'smooth' })
+
+  })
+
+
 
 replay.addEventListener("mouseover",function(){
   replay.style.backgroundColor='blue'
