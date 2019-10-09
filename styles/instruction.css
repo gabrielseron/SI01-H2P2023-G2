@@ -128,7 +128,7 @@ textarea.message{
   height: 120px;
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
-  border-color: blue;
+  border-color: white;
 }
 
 textarea.A{
@@ -138,7 +138,7 @@ textarea.A{
   height: 15px;
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
-    border-color: blue;
+  border-color: white;
 }
 
 
