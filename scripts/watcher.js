@@ -5,6 +5,7 @@ const displayNoneDefi = document.querySelector(".displayNoneDefi")
 const containerGifDefi = document.querySelector(".containerGifDefi")
 const containerMsgErreur = document.querySelector(".containerMsgErreur")
 const espaceDefi = document.querySelector(".espaceDefi")
+const gifDefiText=document.querySelector(".containerGifDefi h1")
 
 // RANDOM PSEUDO
 
@@ -38,7 +39,7 @@ const nombreViewers = document.querySelectorAll(".nombreViewers h1")
   let tabNomnbreViewers = []
 
 for(let i=0; i<nombreViewers.length; i++){
-  let nombreAlea=(Math.floor(Math.random()*8900+100))/100
+  let nombreAlea=(Math.floor(Math.random()*89+1))
   nombreViewers[i].innerText=nombreAlea+"K"
   tabNomnbreViewers.push(nombreAlea)
 }
@@ -46,11 +47,13 @@ for(let i=0; i<nombreViewers.length; i++){
 
 let variationViewers = setInterval(variation, 1000)
 
+
 function variation(){
   for(let i=0; i<nombreViewers.length; i++){
-    let nombrePlusMoins = (Math.floor(Math.random()*89+1))*(Math.floor(Math.random()*3-1))
-    tabNomnbreViewers[i]=tabNomnbreViewers[i]+Math.floor((nombrePlusMoins/100))
-    nombreViewers[i].innerText=tabNomnbreViewers[i]+"K"
+    let nombrePlusMoins = (Math.floor(Math.random()*4+1))*(Math.floor(Math.random()*2))
+    tabNomnbreViewers[i]=(tabNomnbreViewers[i]*100+Math.floor(nombrePlusMoins))/100
+    nombreViewers[i].innerText=(tabNomnbreViewers[i]).toFixed(2)+"K"
+
   }
 }
 
@@ -147,10 +150,10 @@ const pseudoJoueur = document.querySelector(".containerCredits h1")
 const credits = document.querySelector(".containerCredits h2")
 
 let creditsJoueur=300
-
+/*
 pseudoJoueur.innerText=localStorage.pseudoJoueur
 credits.innerText="Vos crédits : "+creditsJoueur+"K"
-
+*/
 
 // CHOIX DEFI
 
@@ -165,6 +168,7 @@ for(let i=0; i<defi.length; i++){
       containerGifDefi.classList.add("bgKiss")
       containerGifDefi.classList.remove("bgTatouage")
       containerGifDefi.classList.remove("bgChute")
+      gifDefiText.style.display="none"
       if(kissDone==false){
         creditsJoueur=creditsJoueur-50
         credits.innerText="Vos crédits : "+Math.trunc(creditsJoueur)+"K"
@@ -189,6 +193,7 @@ for(let i=0; i<defi.length; i++){
       containerGifDefi.classList.add("bgTatouage")
       containerGifDefi.classList.remove("bgChute")
       containerGifDefi.classList.remove("bgKiss")
+      gifDefiText.style.display="none"
       if(tatouageDone==false){
         creditsJoueur=creditsJoueur-100
         credits.innerText="Vos crédits : "+Math.trunc(creditsJoueur)+"K"
@@ -212,6 +217,7 @@ for(let i=0; i<defi.length; i++){
       containerGifDefi.classList.add("bgChute")
       containerGifDefi.classList.remove("bgTatouage")
       containerGifDefi.classList.remove("bgKiss")
+      gifDefiText.style.display="none"
       if(chuteDone==false){
         creditsJoueur=creditsJoueur-150
         credits.innerText="Vos crédits : "+Math.trunc(creditsJoueur)+"K"
@@ -227,4 +233,28 @@ for(let i=0; i<defi.length; i++){
       }
     }
   )
+}
+
+// CHAT AUTOMATIQUE
+
+
+
+let botMsg=["Ahah trop drôle !","jpp","mdr","lol","ptdr","omg trop fort","oh mon dieu!","énorme","qui pour une game sur lol ?","ajoutez moi sur snap","c'est truqué obligé","j'y crois pas","c'est vraiment réel ?","j'ai quand meme mis 3h à coder ce chat automatique",]
+let chatAuto=setInterval(createDiv,Math.floor(Math.random()*7 +3)*1000)
+let iMax=0
+  function createDiv(){
+    const chat=document.querySelector(".chat")
+    let div = document.createElement('div')
+    div.classList.add('message')
+    let pseudo = ["hack3r", "g33k", "cyb3r", "anonymØus", "fr3dØ_laManØ", "bØubØu", "bØgØ$$", "BØ$$", "NéØ", "MatriX", "MØrpheus"],
+        numberPseudo=Math.floor(Math.random()* 8999+1000)
+    let pseudoJoueur = pseudo[Math.floor(Math.random()*pseudo.length)]+"_"+numberPseudo
+    div.textContent=pseudoJoueur+" : "+botMsg[Math.floor(Math.random()*botMsg.length)]
+    chat.appendChild(div)
+
+   const divDecal=document.querySelectorAll(".chat div")
+   for(let i=0; i<divDecal.length; i++){
+    divDecal[i].style.bottom=iMax*20-[i]*20+"%"
+  }
+  iMax++
 }

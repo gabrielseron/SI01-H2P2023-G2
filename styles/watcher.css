@@ -4,7 +4,14 @@ body{
   overflow: hidden;
   background-image: url(../images/watcherBackground.png);
   background-size:cover;
+  font-family: 'Rubik', sans-serif;
+  color :white;
 }
+
+/*<div class="containerCredits">
+  <h1>Pseudo</h1>
+  <h2>Crédits</h2>
+</div>*/
 
 
 .containerJoueursEnLigne{
@@ -21,7 +28,6 @@ body{
 .containerJoueursEnLigne h1{
   color : #FFFF00;
   font-size : 40px;
-  font-family: 'Rubik', sans-serif;
   margin: 20px;
 }
 
@@ -33,7 +39,7 @@ body{
   align-items: center;
   flex-direction: column;
   position: absolute;
-  top : 2%;
+  top : 20%;
 }
 
 .joueurBackground{
@@ -68,6 +74,10 @@ body{
   animation-iteration-count: 1;
 }
 
+.joueurLive:hover{
+  border:3px solid red;
+}
+
 @keyframes rightToLeft {
   from{
     transform: translateX(300px);
@@ -77,32 +87,12 @@ body{
   }
 }
 
-/*.joueurLive:hover , .joueurBackground:hover{
-  animation-name: shakeHover;
-  animation-duration : .2s;
-  animation-iteration-count: 2;
-}
-
-@keyframes shakeHover {
-  from{
-    transform: translateX(0px);
-  }
-  33%{
-    transform : translateY(10px);
-  }
-  66%{
-    transform: translateY(-10px);
-  }
-  to{
-    transform: translateX(0px);
-  }
-}*/
 
 .joueurPseudo{
   font-size: 27px;
   position: absolute;
   left : 10%;
-  font-family: 'Rubik', sans-serif;
+
 }
 
 .nombreViewers{
@@ -117,7 +107,7 @@ body{
 
 .nombreViewers h1{
   color : #09A595;
-  font-family: 'Rubik', sans-serif;
+
 }
 
 .nombreViewers img{
@@ -141,14 +131,10 @@ body{
 }
 
 .defiBackground{
-  width: 30%;
-  height: 100%;
+  width: 20%;
+  height: 80%;
   background-color: black;
   opacity: .6;
-}
-
-.defi:hover{
-  border : 4px solid #FFFF00;
 }
 
 .containerDefi{
@@ -161,8 +147,8 @@ body{
 }
 
 .defi{
-  width : 30%;
-  height: 100%;
+  width : 20%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,16 +156,24 @@ body{
   opacity: 1;
 }
 
+.defi:hover{
+  border : 4px solid #FFFF00;
+}
+
 .defi h1{
+  font-size: 25px;
   color : #FFFF00;
   text-align: center;
+
 }
 
 .defi h2{
+  font-size: 20px;
   color : #FFFF00;
   border-top: 4px solid #FFFF00;
   margin-top: 30px;
   padding-top: 30px;
+
 }
 
 .espaceDefi{
@@ -188,7 +182,7 @@ body{
   width : 100%;
   height: 300px;
   display: none;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .containerCredits{
@@ -206,6 +200,7 @@ body{
 
 .containerCredits h1, .containerCredits h2{
   color : #FFFF00;
+
 }
 
 .containerGifDefi{
@@ -213,6 +208,17 @@ body{
   height: 300px;
   margin: 0 auto;
   border: 4px solid #FFFF00;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerGifDefi h1{
+  color : white;
+  text-align: center;
+  font-size: 17px;
+
 }
 
 .bgKiss{
@@ -228,9 +234,25 @@ body{
 }
 
 .chat{
-  width: 27%;
+  width: 40%;
   height: 300px;
   border: 4px solid #FFFF00;
+  background-color: #282828;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.message{
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
 }
 
 .containerMsgErreur{
@@ -265,6 +287,7 @@ body{
   padding-bottom: 60px;
   border-bottom: 4px solid #F3F302;
   text-align: center;
+
 }
 .msgErreur h2{
   padding-top: 40px;
