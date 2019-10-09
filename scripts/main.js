@@ -5,7 +5,10 @@ const txtChoisisRole = document.querySelector(".containerTxt h3")
 const txtPresentation = document.querySelector("#txtPresentation")
 const pseudoTxt = document.querySelector("#pseudoTxt")
 const createAccountWatcher = document.querySelector(".createAccountWatcher")
-const alertPannel = document.querySelector(".alertPannel")
+const alertPannel = document.querySelector(".containerAlertPannel")
+const buttonOkAlertPannel = document.querySelector(".containerTxtAlertPannel h2")
+const gif = document.querySelector(".containerGif img")
+
 
 imgWatcher.addEventListener(
   "mouseover",
@@ -49,7 +52,7 @@ imgWatcher.addEventListener(
     imgNerve.style.opacity="0"
     imgNerve.style.transition="all 1s"
     imgWatcher.style.width="600px"
-    imgWatcher.style.transform="translateY(-250%)translateX(30%)"
+    imgWatcher.style.transform="translateY(-250%)translateX(40%)"
     imgWatcher.style.opacity="1"
     imgWatcher.style.transition="all 1s"
     txtChoisisRole.style.opacity="0"
@@ -66,7 +69,7 @@ imgWatcher.addEventListener(
       let pseudo = ["hack3r", "g33k", "cyb3r", "anonymØus", "fr3dØ_laManØ", "bØubØu", "bØgØ$$", "BØ$$", "NéØ", "MatriX", "MØrpheus"],
           numberPseudo=Math.floor(Math.random()* 8999+1000)
 
-      let pseudoJoueur = pseudo[Math.floor(Math.random()*pseudo.length+1)]+"_"+numberPseudo
+      let pseudoJoueur = pseudo[Math.floor(Math.random()*pseudo.length)]+"_"+numberPseudo
 
       pseudoTxt.innerText="Voici votre pseudo généré = "+pseudoJoueur
 
@@ -81,5 +84,23 @@ imgPlayer.addEventListener(
   "click",
   function(){
     alertPannel.style.display="block"
+  }
+)
+
+buttonOkAlertPannel.addEventListener(
+  "click",
+  function(){
+    alertPannel.style.display="none"
+  }
+)
+
+// GIF
+
+
+imgWatcher.addEventListener(
+  "mouseover",
+  function(){
+    gif.removeAttribute("src")
+    gif.getAttribute("src", "images/danger.png")
   }
 )

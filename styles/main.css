@@ -7,27 +7,6 @@ body{
   background-color: black;
 }
 
-.alertPannel{
-  width : 100%;
-  height: 100%;
-  background: black;
-  position: absolute;
-  z-index: 1;
-  display: none;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.alertPannel img{
-  width : 200px;
-  height: 200px;
-}
-
-.alertPannel h1{
-  color : #F3F302;
-}
-
 .createAccountWatcher{
   opacity: 0;
   position: absolute;
@@ -66,7 +45,7 @@ body{
   display: flex;
   justify-content: center;
   flex-direction: clumn;
-  margin-top : 200px;
+  margin-top : 20px;
 }
 
 .containerTxt{
@@ -90,6 +69,20 @@ body{
 .containerWatcherPlayer img{
   width : 35%;
   height: auto;
+}
+
+.containerGif{
+  width : 35%;
+  height: 230px;
+  margin: 50px auto;
+  border: 2px solid #FFFF00;
+  display: flex;
+  justify-content: center;
+}
+
+.containerGif img{
+  width: 90%;
+  height : auto;
 }
 
 /* OPACITY JS */
@@ -119,7 +112,7 @@ body{
     width:0ch;
   }
   100% {
-    width: 30ch;
+    width: 32ch;
   }
 }
 
@@ -128,9 +121,71 @@ body{
   position: absolute;
   top : 42%;
   left : 27%;
-  animation : type 1.7s steps(22);
+  animation : type 1.7s steps(20);
   overflow : hidden;
   white-space : nowrap;
   border-right: 4px solid white;
-  width : 30ch;
+  width : 32ch;
+}
+
+.containerAlertPannel{
+  display: none;
+}
+
+
+
+.alertPannel{
+  border : 2px solid #F3F302;
+  width : 70%;
+  height: 70%;
+  background: black;
+  position: absolute;
+  top : 15%;
+  left : 15%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: center;
+  align-items: center;
+  animation-name : shake;
+  animation-duration: .4s;
+  animation-iteration-count: 2;
+}
+
+@keyframes shake{
+  from{
+    transform: translateX(0px);
+  }
+  33%{
+    transform: translateX(10px);
+  }
+  66%{
+    transform: translateX(-10px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+
+.alertPannel img{
+  width : 200px;
+  height: 200px;
+}
+
+.alertPannel h1{
+  color : #F3F302;
+  padding-bottom: 60px;
+  border-bottom: 4px solid #F3F302;
+}
+
+.alertPannel h2{
+  font-size: 40px;
+  color : #F3F302;
+}
+
+.containerTxtAlertPannel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

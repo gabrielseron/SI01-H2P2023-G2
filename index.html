@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <div class="alertPannel">
-      <img src="images/danger.png">
-      <h1>NOMBRE DE JOUEURS MAXIMUM ATTEINT<br>RÉESSAYEZ PLUS TARD</h1>
-    </div>
+
     <div class="createAccountWatcher">
       <h2>Pseudo</h2>
       <input id="inputPseudo"></input>
@@ -31,8 +28,20 @@
         <img src="images/WATCHERneon.png" alt="watcher" id="watcherIMG" class="opacityOFF">
         <img src="images/PLAYERneon.png" alt="player" id="playerIMG" class="opacityOFF">
       </div>
+      <div class="containerGif">
+        <img src="images/gifNerveChoice.gif"
+      </div>
       <h1 id="txtPresentation">Bienvenue sur Nerve. Prêt à commencer ?</h1>
       <h1 id="pseudoTxt"></h1>
+      <div class="containerAlertPannel">
+        <div class="alertPannel">
+          <img src="images/danger.png">
+          <div class="containerTxtAlertPannel">
+            <h1>NOMBRE DE JOUEURS MAXIMUM ATTEINT<br>RÉESSAYEZ PLUS TARD</h1>
+            <h2>OK</h2>
+          </div>
+        </div>
+      </div>
     <script src="scripts/main.js"></script>
   </body>
 </html>
