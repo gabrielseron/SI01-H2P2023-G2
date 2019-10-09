@@ -8,8 +8,9 @@ body{
   background-image: url("../images/nerve_wallpaper.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed;$
   scroll-snap-type: y mandatory;
+
 
 }
 
@@ -18,11 +19,10 @@ section{
   height: 949px;
   scroll-snap-align: start;
   overflow:hidden;
+   background-color:rgba(0, 0, 0, 0.5  );
 }
 #first_page{
-  background-image: url("../images/fond.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+
   scroll-snap-align: start;
 }
 #second_page{
@@ -79,6 +79,7 @@ section{
   width: 1000px;
   margin-top: -100px;
   margin-left: 20px;
+  margin-bottom: -50px;
   animation: slide 3s;
 
 
@@ -94,7 +95,6 @@ section{
 #resume{
      color: white;
     font-size: 20px;
-    background-color:rgba(0, 0, 0, 0.8  );
     width: 700px;
     text-align: center;
     padding: 60px 200px 60px 200px;
@@ -132,7 +132,6 @@ bottom: -30%;
 #vee_description{
 color: white;
  font-size: 15px;
- background-color:rgba(0, 0, 0, 0.8  );
  width: 700px;
  text-align: center;
  margin-left: 250px;
@@ -142,7 +141,6 @@ color: white;
 #ian_description{
 color: white;
  font-size: 15px;
- background-color:rgba(0, 0, 0, 0.8  );
  width: 700px;
  text-align: center;
  margin-left: 30%;
@@ -152,14 +150,12 @@ color: white;
 
 #fourth_page{
   display: flex;
-  background-color:rgba(0, 0, 0, 0.8  );
-
 }
 iframe{
   margin-top: 100px;
 }
 
-.casting_description{
+#casting_description{
   color: white;
   font-size: 30px;
   width: 600px;
@@ -167,6 +163,7 @@ iframe{
   margin-top: 100px;
   margin-left: 20px;
   padding: 30px;
+  opacity: 0;
 }
 
 #fifth_page{
@@ -174,20 +171,24 @@ iframe{
   background-color:rgba(0, 0, 0, 0.8  );
 
 }
-h4{
+h3{
   font-size: 30px;
   color: white;
-  margin-top: 300px;
+}
+h4{
+  font-size: 50px;
+  color: white;
+  margin-left: 40px;
 }
 
-button{
+
+.button{
   border-radius: 20px;
   background-color:rgba(0, 0, 0, 0.5 );
   border-color: white;
   color: white;
   margin-left: 250px;
   padding: 20px;
-  opacity: 0;
 }
 
 
@@ -200,4 +201,70 @@ button{
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+.bubble-text{
+  margin-left: 100px;
+  background:#FFFFFF;
+   color:#000000;
+    padding:7px 15px;
+    border-radius:3px;
+    width:350px;
+  }
+  .bubble-text2{
+    margin-left: 1000px;
+    background:#FFFFFF;
+     color:#000000;
+      padding:7px 15px;
+      border-radius:3px;
+      width:350px;
+    }
+.bubble-text::after{
+content:"";
+border-right:20px solid transparent;
+border-top: 20px solid #ffffff;
+position: absolute;
+}
+.bubble-text2::after{
+content:"";
+border-left:20px solid transparent;
+
+border-top: 20px solid #ffffff;
+position: absolute;
+}
+
+.avatar>img{
+  width: 100px;
+  height: auto;
+}
+.social_network{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.fa {
+  padding: 20px;
+  font-size: 80px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 25px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+#video{
+  margin-top: 100px;
 }

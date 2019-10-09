@@ -6,18 +6,17 @@ let slide3=document.getElementById('image_gif')
 let nerve_title=document.getElementById('nerve_title')
 let bluray=document.getElementById('bluray')
 let button=document.getElementById('button')
-let background=document.querySelectorAll('body')
-
-console.log(background);
+let casting=document.getElementById('casting_description')
+let video=document.getElementById('video')
 
 
     window.addEventListener(
      "scroll",
      function (){
        const scrolled = window.scrollY
-       if(scrolled<200){
+       if(scrolled<250){
          resume.style.opacity='0'
-         resume.style.transform= "translateX(-300px)";
+         resume.style.transform= "translateX(-500px)";
          first_charactere.style.opacity='0'
          second_charactere.style.opacity='0'
 
@@ -43,13 +42,27 @@ console.log(background);
          second_charactere.style.opacity='1'
          second_charactere.style.transition="all 1s"
          second_charactere.style.transform= "translateX(-200px)";
+         casting.style.opacity='0'
+         casting.style.transform="translateX(-150px)"
+         video.style.opacity='0'
+         video.style.transform="translateX(200px)"
        }
+
+
        if(scrolled>2900){
 
          first_charactere.style.opacity='0'
          first_charactere.style.transform="translateX(-300px)"
          second_charactere.style.opacity='0'
          second_charactere.style.transform= "translateX(1000px)";
+         casting.style.opacity='1'
+         casting.style.transition="all 1s"
+         casting.style.transform="translateX(150px)"
+         video.style.opacity='1'
+         video.style.transition="all 1s"
+         video.style.transform="translateX(-50px)"
+
+
 
        }
        /*
@@ -74,7 +87,7 @@ console.log(background);
 
      }
    )
-
+/*
    button.addEventListener("mouseover", function(){
      button.style.backgroundColor="white"
      button.style.color="black"
@@ -84,3 +97,4 @@ console.log(background);
      button.style.backgroundColor="initial";
      button.style.color= "white";
    })
+   */
