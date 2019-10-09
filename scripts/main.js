@@ -126,3 +126,80 @@ imgPlayer.addEventListener(
     containerGif.classList.remove("bgPlayer")
   }
 )
+
+
+// VIDEO
+
+const videoContainer=document.querySelector(".containerVideo")
+const video=document.querySelector("video")
+const playButton=document.querySelector(".playButton img")
+const skipButton=document.querySelector(".skipButton")
+const msgReady=document.querySelector(".msgReady")
+const buttonBack=document.querySelector(".buttonBack")
+const buttonStart=document.querySelector("#buttonStartWatcherAccount")
+
+buttonStart.addEventListener(
+  "click",
+  function(){
+    videoContainer.style.display="flex"
+    videoContainer.style.transition="all 1s"
+    setTimeout(extend, 20)
+    function extend(){
+      videoContainer.style.width="70%"
+      videoContainer.style.height="70%"
+    }
+  }
+)
+
+videoPaused=true
+
+
+video.addEventListener(
+  "click",
+  function(){
+    if(videoPaused==true){
+      video.play()
+      videoPaused=false
+      playButton.style.opacity="0"
+      playButton.style.transition="all 1s"
+    }
+    else{
+      video.pause()
+      videoPaused=true
+      playButton.style.opacity="1"
+      playButton.style.transition="all .4s"
+    }
+  }
+)
+
+video.addEventListener(
+  "mouseout",
+  function(){
+    skipButton.style.opacity="0"
+    skipButton.style.transition="all 2s"
+  }
+)
+
+video.addEventListener(
+  "mouseover",
+  function(){
+    skipButton.style.opacity="1"
+    skipButton.style.transition="all .3s"
+  }
+)
+
+skipButton.addEventListener(
+  "click",
+  function(){
+    msgReady.style.display="flex"
+    video.pause()
+  }
+)
+
+buttonBack.addEventListener(
+  "click",
+  function(){
+    msgReady.style.display="none"
+    video.play()
+  }
+)
