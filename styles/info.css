@@ -1,0 +1,203 @@
+body{
+
+  margin:0;
+  padding:0;
+  font-family:"Gotham", sans-serif;
+  font-size: 14px;
+  color:#444;
+  background-image: url("../images/nerve_wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  scroll-snap-type: y mandatory;
+
+}
+
+section{
+  width: 100%;
+  height: 949px;
+  scroll-snap-align: start;
+  overflow:hidden;
+}
+#first_page{
+  background-image: url("../images/fond.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-snap-align: start;
+}
+#second_page{
+    scroll-snap-align: start;
+}
+#third_page{
+    scroll-snap-align: start;
+    padding-top: 100px;
+}
+#nerve_title>img{
+  width: 1000px;
+  height: auto;
+  margin-left: 17%;
+  animation: slide 2.2s;
+}
+
+#watcher_title>img{
+  width: 280px;
+  height: auto;
+  margin-top: -100px;
+    animation: slide 2.4s;
+}
+#player_title>img{
+  width: 280px;
+  height: auto;
+  margin-top: -100px;
+  animation: slide 2.6s;
+}
+
+#subtitle{
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 31%
+}
+#image_gif{
+  margin-left: 10%;
+}
+#description_image{
+  display: flex;
+  flex-direction: row;
+}
+#description{
+  margin-top: 100px;
+  color: white;
+  margin-left: 50px;
+  font-size: 20px;
+  width: 200px;
+  animation: slide 2.6s;
+
+}
+
+#description_image>img{
+  width: 1000px;
+  margin-top: -100px;
+  margin-left: 20px;
+  animation: slide 3s;
+
+
+}
+
+
+#container_text{
+  padding-top: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#resume{
+     color: white;
+    font-size: 20px;
+    background-color:rgba(0, 0, 0, 0.8  );
+    width: 700px;
+    text-align: center;
+    padding: 60px 200px 60px 200px;
+    opacity: 0;
+}
+  #resume>img{
+    width: 500px;
+    height : auto;
+  }
+#first_charactere{
+
+    position: relative;
+    opacity: 0;
+}
+
+#first_charactere>img{
+width: 300px;
+height: auto;
+position: absolute;
+bottom: -30%;
+}
+#second_charactere{
+  padding-top: 100px;
+  position: relative;
+  opacity: 0;
+}
+#second_charactere>img{
+  position: absolute;
+  width: 300px;
+  height: auto;
+  right: 0;
+  top: 10%;
+}
+
+#vee_description{
+color: white;
+ font-size: 15px;
+ background-color:rgba(0, 0, 0, 0.8  );
+ width: 700px;
+ text-align: center;
+ margin-left: 250px;
+ margin-top: 100px;
+ padding: 60px;
+}
+#ian_description{
+color: white;
+ font-size: 15px;
+ background-color:rgba(0, 0, 0, 0.8  );
+ width: 700px;
+ text-align: center;
+ margin-left: 30%;
+ padding: 60px;
+
+}
+
+#fourth_page{
+  display: flex;
+  background-color:rgba(0, 0, 0, 0.8  );
+
+}
+iframe{
+  margin-top: 100px;
+}
+
+.casting_description{
+  color: white;
+  font-size: 30px;
+  width: 600px;
+  height: 400px;
+  margin-top: 100px;
+  margin-left: 20px;
+  padding: 30px;
+}
+
+#fifth_page{
+  display: flex;
+  background-color:rgba(0, 0, 0, 0.8  );
+
+}
+h4{
+  font-size: 30px;
+  color: white;
+  margin-top: 300px;
+}
+
+button{
+  border-radius: 20px;
+  background-color:rgba(0, 0, 0, 0.5 );
+  border-color: white;
+  color: white;
+  margin-left: 250px;
+  padding: 20px;
+  opacity: 0;
+}
+
+
+@keyframes slide {
+  from{
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
