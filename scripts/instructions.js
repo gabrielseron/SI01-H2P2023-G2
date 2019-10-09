@@ -17,14 +17,14 @@ let txtInstructionsBlock = txtinstructionsBlocks[0]
 let txtInstructions = txtInstructionsItems[0]
 
 
-//FONCTION POUR AFFICHER L'INSTRUCTION SUIVANTE
+//FONCTION POUR AFFICHER L'INSTRUCTION SUIVANTE ET LA PAGE WEB
 
 //nextButton.addEventListener('click',
 //function(){
+//    txtInstructionsBlock.classList.add('txtInstructions')
 //    let txtInstructionsBlock = txtinstructionsBlocks[y]
 //    let txtInstructions = txtInstructionsItems[y]
 //    y++
-//    txtInstructionsBlock.classList.add('txtInstructions')
 //})
 
 
