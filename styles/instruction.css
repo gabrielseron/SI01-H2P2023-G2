@@ -1,0 +1,97 @@
+body{
+  width : 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(../images/background.instruction.png);
+  background-size:cover;
+  font-family: 'Rubik', sans-serif;
+}
+
+main{
+  height: 100%;
+}
+
+.container{
+  width:940px;
+  margin:0 auto;
+  margin-bottom: 70px;
+}
+
+.container_flex{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items:center;
+}
+
+/*
+PAGE WEB 1 : GMAIL INSCRIPTION
+*/
+.pageWebGmail {
+  height: 520px;
+  width:100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  background-color: blue;
+  position: absolute;
+  z-index: 4;
+}
+
+.pageWebGmail img{
+  height: 100% ;
+  width: 50%;
+
+}
+
+/* QUESTIONNNAIRE DANS LA PAGE GMAIL INSCRIPTION*/
+
+.questionnnaire1{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  border-radius: 10px;
+}
+label{
+  font-size: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+input.little{
+  width: 60%;
+  height: 15%;
+  margin: 10px;
+  margin-bottom: 20px;
+  background-color: #f2f3f4;
+
+}
+.line {
+  margin-top: 350px;
+  width: 150px;
+}
+.submit{
+  display: flex;
+  justify-content: flex-end;
+}
+input.submit{
+  width: 60px;
+  height: 20px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  color: white;
+  background-color:#1A73E8;
+  font-size: 7px;
+  display: flex;
+  justify-content: center;
+
+}
+
+/*
+PAGE WEB 2 : GMAIL ECRIRE UN EMAIL AU COMPLICE
+*/
