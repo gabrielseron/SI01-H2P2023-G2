@@ -315,3 +315,52 @@ input.submit_5{
   justify-content: center;
   border-color: black;
 }
+
+/*
+PAGE 6 : AMAZONE ADRESSE
+*/
+.pageWeb_Amazon_adresse{
+  height: auto;
+  width:90%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  position: absolute;
+  z-index: 6;
+
+}
+
+.pageWeb_Amazon_adresse img{
+  height: auto;
+  width:70%;
+  border : 1px solid;
+  border-color: black;
+  border-radius: 4px;
+}
+
+.container6{
+  margin-top: 355px;
+  position: absolute;
+  width: 245px;
+  height: 45px;
+  display: flex;
+  margin-left: -16px;
+  justify-content:flex-start;
+  flex-flow: column wrap;
+  display: flex;
+  flex-direction: row;
+}
+
+input.submit_6{
+  width: 100%;
+  height: 30px;
+  margin-top: 12px;
+  color: black;
+  background-color:#F4BE7C;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  border-color: black;
+  text-transform: uppercase;
+}
