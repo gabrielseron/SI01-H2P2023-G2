@@ -5,3 +5,8 @@ body{
   background-image: url(../images/background.instruction.png);
   background-size:cover;
 }
+
+.pageWebGmail{
+  height: 30% ;
+  width: 30%;
+}
