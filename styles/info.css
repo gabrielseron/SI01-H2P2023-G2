@@ -9,29 +9,19 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;$
-  scroll-snap-type: y mandatory;
+
 
 
 }
 
 section{
   width: 100%;
-  height: 949px;
-  scroll-snap-align: start;
+  height: 750px;
   overflow:hidden;
-   background-color:rgba(0, 0, 0, 0.5  );
+   background-color:rgba(0, 0, 0, 0.5);
 }
-#first_page{
 
-  scroll-snap-align: start;
-}
-#second_page{
-    scroll-snap-align: start;
-}
-#third_page{
-    scroll-snap-align: start;
-    padding-top: 100px;
-}
+
 #nerve_title>img{
   width: 1000px;
   height: auto;
@@ -87,7 +77,6 @@ section{
 
 
 #container_text{
-  padding-top: 75px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -111,10 +100,9 @@ section{
 }
 
 #first_charactere>img{
-width: 300px;
+width: 200px;
 height: auto;
 position: absolute;
-bottom: -30%;
 }
 #second_charactere{
   padding-top: 100px;
@@ -123,18 +111,25 @@ bottom: -30%;
 }
 #second_charactere>img{
   position: absolute;
-  width: 300px;
+  width: 200px;
   height: auto;
   right: 0;
-  top: 10%;
+}
+#third_charactere>img{
+  position: absolute;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-top: 50px;
+
 }
 
 #vee_description{
 color: white;
  font-size: 15px;
  width: 700px;
- text-align: center;
- margin-left: 250px;
+ margin-left: 190px;
  margin-top: 100px;
  padding: 60px;
 }
@@ -142,10 +137,20 @@ color: white;
 color: white;
  font-size: 15px;
  width: 700px;
- text-align: center;
- margin-left: 30%;
+ margin-left: 540px;
  padding: 60px;
 
+}
+#sydney_description{
+color: white;
+ font-size: 15px;
+ width: 700px;
+ margin-left: 300px;
+padding-top: 100px;
+}
+
+#third_page{
+  padding-bottom: 100px;
 }
 
 #fourth_page{
@@ -267,4 +272,26 @@ position: absolute;
 }
 #video{
   margin-top: 100px;
+}
+
+#replay{
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  background-color: red;
+  position: fixed;
+  color: white;
+  font-size: 30px;
+  z-index: 10;
+}
+
+#replay>a{
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
 }
