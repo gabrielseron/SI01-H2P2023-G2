@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Niramit", "Arial", sans-serif;
+  font-size: 16px;
+  color: #e2e1de;
+  background-color: #000000
+}
+
+h1, .access1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+progress {
+  width: 75%;
+  height: 5%;
+  color: #ffffff;
+  background-color: red;
+  border-color: #F2F003;
+  position: absolute;
+  top: 25%;
+  left: 12%;
+}
+
+#txtLog {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  animation: type 1.8s steps(22);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+  width: 33.5ch;
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+
+  100% {
+    width: 33ch;
+  }
+}
+
+.go {
+  padding-bottom: 150px;
+  position: absolute;
+  bottom: 20px;
+  left: 49%;
+}
+
+h1 {
+  color: #F2F003;
+}
+
+.page2 {
+  display: flex;
+  justify-content: center;
+}
+
+.exit {
+  color: red;
+  text-decoration: none;
+  padding-bottom: 150px;
+  position: absolute;
+  top: 600px;
+  left: 49%;
+  font-size: 20px
+}
+
+.txt1 {
+  position: absolute;
+  top: 35%;
+  left: 27%;
+  animation: type 1.8s steps(2000);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+  width: 36ch;
+}
+
+.txt2 {
+  position: absolute;
+  top: 35%;
+  left: 27%;
+  animation: type 1.8s steps(2000);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+  width: 36ch;
+}
+
+.txt3 {
+  position: absolute;
+  top: 35%;
+  left: 27%;
+  animation: type 1.8s steps(2000);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+  width: 36ch;
+}
+
+hr {
+  color: #F2F003;
+  text-align: center;
+  border: 2px solid;
+  position: absolute;
+  bottom: 300px;
+  left: 30%;
+  width: 43%;
+}
+
+.player {
+  padding-bottom: 150px;
+  position: absolute;
+  bottom: 20px;
+  left: 47%;
+}
+
+.nextbutton {
+  margin: 5px;
+  border: 1px black #00A519;
+}
+
+.hidden {
+  display: none;
+}
+
+.ftext1{
+  animation: type 1s steps(15);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+  width: 42ch;
+}
+
+.ftext2{
+  animation: type 1s steps(15);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+  width: 48ch;
+}
+
+.ftext3{
+  animation: type 1s steps(15);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+  width: 5ch;
+}
+
+.ftext4{
+  animation: type 1s steps(15);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+  width: 52ch;
+}
+
+.ftext5{
+  animation: type 1s steps(15);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+  width: 63ch;
+}
+
+.ftext6{
+  animation: type 1s steps(15);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+  width: 7ch;
+}
+
+.ftext7{
+  animation: type 1s steps(15);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+  width: 14ch;
+}
+
+.ftext8{
+  animation: type 1s steps(15);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+  width: 34ch;
+}
+
+.page3 h1{
+  color: #00A519;
+  font-size: 15px;
+  position: absolute;
+  top: 10px;
+}
+
+.next{
+  position: absolute;
+   bottom: 300px;
+   left: 10%;
+   color: #00A519;
+   text-decoration: none;
+}
