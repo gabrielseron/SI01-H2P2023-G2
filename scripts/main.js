@@ -9,6 +9,7 @@ const alertPannel = document.querySelector(".containerAlertPannel")
 const buttonOkAlertPannel = document.querySelector(".containerTxtAlertPannel h2")
 const containerGif = document.querySelector(".containerGif")
 const soundChoice=document.querySelector("#soundChoice")
+const errorSound=document.querySelector("#errorSound")
 
 imgWatcher.addEventListener(
   "mouseover",
@@ -86,6 +87,7 @@ imgPlayer.addEventListener(
   "click",
   function(){
     alertPannel.style.display="block"
+    errorSound.play()
   }
 )
 

@@ -163,6 +163,7 @@ for(let i=0; i<defi.length; i++){
       if(creditsJoueur==0){
         setTimeout(msgErreur, 4000)
         function msgErreur(){
+          errorSound.play()
           containerMsgErreur.style.display="block"
         }
       }
