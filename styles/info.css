@@ -253,17 +253,22 @@ h4{
     padding:7px 15px;
     border-radius:3px;
     width:350px;
+    line-height: normal;
   }
   .bubble-text2{
       color: white;
       width: 300px;
       margin-top: 250px;
       margin-left: 100px;
+      line-height: normal;
+
     }
     .bubble-text3{
         color: white;
         width: 300px;
         margin-left: 100px;
+        line-height: normal;
+
 
       }
 
