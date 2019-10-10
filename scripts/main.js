@@ -8,7 +8,7 @@ const createAccountWatcher = document.querySelector(".createAccountWatcher")
 const alertPannel = document.querySelector(".containerAlertPannel")
 const buttonOkAlertPannel = document.querySelector(".containerTxtAlertPannel h2")
 const containerGif = document.querySelector(".containerGif")
-
+const soundChoice=document.querySelector("#soundChoice")
 
 imgWatcher.addEventListener(
   "mouseover",
@@ -32,7 +32,7 @@ imgPlayer.addEventListener(
     imgPlayer.classList.remove("opacityOFF")
     imgPlayer.classList.add("opacityON")
     imgPlayer.style.transition="all .5s"
-  }
+    }
 )
 imgPlayer.addEventListener(
   "mouseout",
@@ -61,6 +61,7 @@ imgWatcher.addEventListener(
     createAccountWatcher.style.opacity="1"
     createAccountWatcher.style.transition="all 4s"
     containerGif.style.display="none"
+    soundChoice.play()
 
     // Function Random Pseudo
     setTimeout(writePseudo, 2000)
@@ -137,12 +138,14 @@ const skipButton=document.querySelector(".skipButton")
 const msgReady=document.querySelector(".msgReady")
 const buttonBack=document.querySelector(".buttonBack")
 const buttonStart=document.querySelector("#buttonStartWatcherAccount")
+const startButtonSound=document.querySelector("#startButtonSound")
 
 buttonStart.addEventListener(
   "click",
   function(){
     videoContainer.style.display="flex"
     videoContainer.style.transition="all 1s"
+    startButtonSound.play()
     setTimeout(extend, 20)
     function extend(){
       videoContainer.style.width="70%"

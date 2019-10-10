@@ -134,6 +134,7 @@ textarea.message{
   border-color: white;
   resize: none;
   overflow: auto;
+  resize: none;
 }
 
 textarea.A{
@@ -146,6 +147,7 @@ textarea.A{
   border-color: white;
   resize: none;
   overflow: auto;
+  resize: none;
 }
 
 
@@ -215,7 +217,7 @@ textarea.FB{
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
   border-color: white;
-
+  resize: none;
 }
 
 div.submit_3{
@@ -380,7 +382,7 @@ PAGE 6 : AMAZONE ADRESSE
 }
 
 .container6_2{
-  margin-top: 154px;
+  margin-top: 180px;
   position: absolute;
   width: 245px;
   height: 45px;
@@ -413,7 +415,7 @@ div.submit_6 p{
   align-items: center;
 }
 
-textarea.amazon{
+input.amazon{
   margin-top: 27px;
   margin-left: 15px;
   width: 180px;
@@ -421,6 +423,7 @@ textarea.amazon{
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
   border-color: white;
+  resize: none;
 }
 
 /*
@@ -497,7 +500,6 @@ textarea.banque{
   font-family: 'Roboto', 'Arial', sans-serif;
   border-color: white;
   resize: none;
-
 }
 
 div.submit_7 p{
@@ -585,6 +587,7 @@ textarea.banque-paiement{
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
   border-color: white;
+  resize: none;
 }
 
 
