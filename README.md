@@ -8,10 +8,12 @@ Semaine Intensive N°1
 H2P2023 Groupe 2  
   
 Equipe :  
-a
-a
-a 
-a
-a  
+* a
+* a
+* a 
+* a
+* a  
 
 si01h2p2023g2.netlify.com
+
+`background {color: blue;}`
