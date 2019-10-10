@@ -6,7 +6,7 @@ const containerGifDefi = document.querySelector(".containerGifDefi")
 const containerMsgErreur = document.querySelector(".containerMsgErreur")
 const espaceDefi = document.querySelector(".espaceDefi")
 const gifDefiText=document.querySelector(".containerGifDefi h1")
-
+const containerHeader=document.querySelector(".containerHeader")
 // RANDOM PSEUDO
 
 for(let i=0; i<3; i++){
@@ -57,6 +57,7 @@ function variation(){
   }
 }
 
+
 //CLICK ON PLAYER
 
 const joueurLive = document.querySelectorAll(".joueurLive")
@@ -67,93 +68,72 @@ for(let i=0; i<joueurLive.length; i++){
   joueurLive[i].addEventListener(
     "click",
     function(){
-      joueurBackground[0].style.transform="translateY(100px)"
-      joueurBackground[0].style.transition="all 1s"
-      joueurBackground[0].style.opacity="0"
-      joueurBackground[1].style.transform="translateY(100px)"
-      joueurBackground[1].style.transition="all 1s"
-      joueurBackground[1].style.opacity="0"
-      joueurBackground[2].style.transform="translateY(100px)"
-      joueurBackground[2].style.transition="all 1s"
-      joueurBackground[2].style.opacity="0"
+      joueurBackground[0].style.display="none"
+      joueurBackground[1].style.display="none"
+      joueurBackground[2].style.display="none"
       displayNoneDefi.style.display="block"
       espaceDefi.style.display="flex"
-      /*for(let j=0; j<2; j++){
-        defi[j].style.opacity="1"
-        defi[j].style.transition="all 3s"
-        defiBackground[j].style.opacity=".6"
-        defiBackground[j].style.transition="all 3s"
-      }*/
+      containerHeader.style.opacity="1"
+      containerHeader.style.transition="all 1s"
     }
   )
   joueurLive[0].addEventListener(
     "click",
     function(){
-      joueurLive[1].style.transform="translateY(300px)"
-      joueurLive[1].style.transition="all 1s"
-      joueurLive[1].style.opacity="0"
-      joueurLive[2].style.transform="translateY(300px)"
-      joueurLive[2].style.transition="all 1s"
-      joueurLive[2].style.opacity="0"
+      joueurLive[1].style.display="none"
+      joueurLive[2].style.display="none"
       joueurLive[0].style.backgroundColor="black"
-      joueurLive[0].style.width="100%"
+      joueurLive[0].style.opacity=".7"
+      joueurLive[0].style.width="50%"
+      joueurLive[0].style.height="70px"
       joueurLive[0].style.margin="0px"
       joueurLive[0].style.transition="all 1s"
-      listeJoueurs.style.justifyContent="flex-start"
-      listeJoueurs.style.top="0%"
+      listeJoueurs.style.justifyContent="center"
     }
   )
 
 joueurLive[1].addEventListener(
   "click",
   function(){
-    joueurLive[0].style.transform="translateY(300px)"
-    joueurLive[0].style.transition="all 1s"
-    joueurLive[0].style.opacity="0"
+    joueurLive[2].style.display="none"
     joueurLive[0].style.display="none"
-    joueurLive[2].style.transform="translateY(300px)"
-    joueurLive[2].style.transition="all 1s"
-    joueurLive[2].style.opacity="0"
     joueurLive[1].style.backgroundColor="black"
-    joueurLive[1].style.width="100%"
+    joueurLive[1].style.opacity=".7"
+    joueurLive[1].style.width="50%"
+    joueurLive[1].style.height="70px"
     joueurLive[1].style.margin="0px"
     joueurLive[1].style.transition="all 1s"
-    listeJoueurs.style.justifyContent="flex-start"
-    listeJoueurs.style.top="0%"
+    listeJoueurs.style.justifyContent="center"
   }
 )
 
 joueurLive[2].addEventListener(
   "click",
   function(){
-    joueurLive[1].style.transform="translateY(300px)"
-    joueurLive[1].style.transition="all 3s"
-    joueurLive[1].style.opacity="0"
-    joueurLive[0].style.transform="translateY(300px)"
-    joueurLive[0].style.transition="all 3s"
-    joueurLive[0].style.opacity="0"
-    joueurLive[0].style.display="none"
     joueurLive[1].style.display="none"
-    listeJoueurs.style.justifyContent="flex-start"
+    joueurLive[0].style.display="none"
     joueurLive[2].style.backgroundColor="black"
-    joueurLive[2].style.width="100%"
+    joueurLive[2].style.opacity=".7"
+    joueurLive[2].style.width="50%"
+    joueurLive[2].style.height="70px"
     joueurLive[2].style.margin="0px"
     joueurLive[2].style.transition="all 1s"
-    listeJoueurs.style.top="0%"
+    listeJoueurs.style.justifyContent="center"
   }
 )
 }
 
-// ESPACE DEFI
+// CREDITS + PSEUDO JOUEUR
 
-const pseudoJoueur = document.querySelector(".containerCredits h1")
-const credits = document.querySelector(".containerCredits h2")
+const credits = document.querySelector(".containerHeader h2")
+const pseudoJoueur = document.querySelector(".containerHeader h1")
+
+pseudoJoueur.innerText="@"+localStorage.pseudoJoueur
 
 let creditsJoueur=300
-/*
-pseudoJoueur.innerText=localStorage.pseudoJoueur
-credits.innerText="Vos crédits : "+creditsJoueur+"K"
-*/
+
+credits.innerText="VOS CRÉDITS : "+creditsJoueur+"K"
+
 
 // CHOIX DEFI
 
@@ -171,7 +151,7 @@ for(let i=0; i<defi.length; i++){
       gifDefiText.style.display="none"
       if(kissDone==false){
         creditsJoueur=creditsJoueur-50
-        credits.innerText="Vos crédits : "+Math.trunc(creditsJoueur)+"K"
+        credits.innerText="VOS CRÉDITS : "+Math.trunc(creditsJoueur)+"K"
         kissDone=true
       }
       defi[0].style.opacity=".2"
@@ -196,7 +176,7 @@ for(let i=0; i<defi.length; i++){
       gifDefiText.style.display="none"
       if(tatouageDone==false){
         creditsJoueur=creditsJoueur-100
-        credits.innerText="Vos crédits : "+Math.trunc(creditsJoueur)+"K"
+        credits.innerText="VOS CRÉDITS : "+Math.trunc(creditsJoueur)+"K"
         tatouageDone=true
       }
       defi[1].style.opacity=".2"
@@ -220,7 +200,7 @@ for(let i=0; i<defi.length; i++){
       gifDefiText.style.display="none"
       if(chuteDone==false){
         creditsJoueur=creditsJoueur-150
-        credits.innerText="Vos crédits : "+Math.trunc(creditsJoueur)+"K"
+        credits.innerText="VOS CRÉDITS : "+Math.trunc(creditsJoueur)+"K"
         chuteDone=true
       }
       defi[2].style.opacity=".2"
@@ -238,9 +218,8 @@ for(let i=0; i<defi.length; i++){
 // CHAT AUTOMATIQUE
 
 
-
-let botMsg=["Ahah trop drôle !","jpp","mdr","lol","ptdr","omg trop fort","oh mon dieu!","énorme","qui pour une game sur lol ?","ajoutez moi sur snap","c'est truqué obligé","j'y crois pas","c'est vraiment réel ?","j'ai quand meme mis 3h à coder ce chat automatique",]
-let chatAuto=setInterval(createDiv,Math.floor(Math.random()*7 +3)*1000)
+let botMsg=["Ahah trop drôle !","jpp","mdr","lol","ptdr","omg trop fort","oh mon dieu!","énorme","ajoutez moi sur snap","c'est truqué obligé","j'y crois pas","c'est vraiment réel ?","j'ai quand meme mis 3h à coder ça","eh mais c'est ma soeur !","wow truc de fou","faut trop que je le fasse aussi","j'ai peur"]
+let chatAuto=setInterval(createDiv,Math.floor(Math.random()*4 +3)*1000)
 let iMax=0
   function createDiv(){
     const chat=document.querySelector(".chat")
@@ -251,10 +230,32 @@ let iMax=0
     let pseudoJoueur = pseudo[Math.floor(Math.random()*pseudo.length)]+"_"+numberPseudo
     div.textContent=pseudoJoueur+" : "+botMsg[Math.floor(Math.random()*botMsg.length)]
     chat.appendChild(div)
-
    const divDecal=document.querySelectorAll(".chat div")
    for(let i=0; i<divDecal.length; i++){
-    divDecal[i].style.bottom=iMax*20-[i]*20+"%"
+    divDecal[i].style.bottom=iMax*20-[i]*20+20+"%"
   }
   iMax++
 }
+
+// CHAT UTILISATEUR
+
+const msgUtilisateur=document.querySelector("#msgUtilisateur")
+const msgUtilisateurButton=document.querySelector("#msgUtilisateurButton")
+
+msgUtilisateurButton.addEventListener(
+  "click",
+  function(){
+    const chat=document.querySelector(".chat")
+    let div = document.createElement('div')
+    div.classList.add('message')
+    div.textContent=localStorage.pseudoJoueur+" : "+msgUtilisateur.value
+    chat.appendChild(div)
+    msgUtilisateur.value=""
+
+   const divDecal=document.querySelectorAll(".chat div")
+   for(let i=0; i<divDecal.length; i++){
+    divDecal[i].style.bottom=iMax*20-[i]*20+40+"%"
+  }
+  iMax++
+  }
+)

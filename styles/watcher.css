@@ -8,18 +8,30 @@ body{
   color :white;
 }
 
-/*<div class="containerCredits">
-  <h1>Pseudo</h1>
-  <h2>Crédits</h2>
-</div>*/
+.containerHeader{
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  opacity: 0;
+  justify-content: space-around;
+  align-items: center;
+  top : 0%;
+  z-index: 1;
+  background-color: black;
+}
 
+.containerHeader h2{
+  color : #FFFF00;
+}
 
 .containerJoueursEnLigne{
   background-color: black;
   opacity: .8;
   width: 60%;
   height: 20%;
-  margin: 0 auto;
+  margin: 10px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,24 +197,6 @@ body{
   justify-content: flex-start;
 }
 
-.containerCredits{
-  width: 27%;
-  height: 300px;
-  border: 4px solid #FFFF00;
-  visibility: hidden;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  background-color: black;
-  opacity: .8;
-}
-
-.containerCredits h1, .containerCredits h2{
-  color : #FFFF00;
-
-}
-
 .containerGifDefi{
   width : 40%;
   height: 300px;
@@ -236,8 +230,6 @@ body{
 .chat{
   width: 40%;
   height: 300px;
-  border: 4px solid #FFFF00;
-  background-color: #282828;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -246,13 +238,56 @@ body{
 
 .message{
   position: absolute;
-  bottom: 0%;
+  bottom: 60px;
   width: 100%;
   height: 50px;
   border: 1px solid black;
   display: flex;
   align-items: center;
-  padding-left: 10%;
+  padding-left: 20px;
+  background-color: black;
+  animation-name: disparition;
+  animation-duration: 13s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes disparition {
+  from{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+#firstMsg{
+  opacity: .5;
+}
+
+#msgUtilisateur{
+  width : 70%;
+  height: 55px;
+  position: absolute;
+  bottom:0%;
+  z-index: 1;
+  padding-left: 20px;
+}
+
+.containerButtonMsgUtilisateur{
+
+}
+
+#msgUtilisateurButton{
+  width : 30%;
+  height: 60px;
+  right : 0%;
+  position: absolute;
+  bottom : 0%;
+  z-index: 1;
+  background-color: red;
 }
 
 .containerMsgErreur{
