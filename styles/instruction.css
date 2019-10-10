@@ -36,6 +36,8 @@ PAGE WEB 1 : GMAIL INSCRIPTION
   position: relative;
   position: absolute;
   z-index: 4;
+  animation-name: opening;
+  animation-duration: .4s;
 }
 
 .pageWebGmail img{
@@ -103,6 +105,8 @@ PAGE WEB 2 : GMAIL ECRIRE UN EMAIL AU COMPLICE
   position: absolute;
   z-index: 4;
   margin-left: 450px;
+  animation-name: opening;
+  animation-duration: .4s;
 }
 
 .pageWebGmail_mail img{
@@ -180,6 +184,8 @@ PAGE WEB 3 : CONNECTION A FB
   position: relative;
   position: absolute;
   z-index: 6;
+  animation-name: opening;
+  animation-duration: .4s;
 }
 
 .pageWebGmail_FB_connection img{
@@ -292,7 +298,8 @@ PAGE 5 : AMAZON ARTICLE
   position: relative;
   position: absolute;
   z-index: 8;
-
+  animation-name: opening;
+  animation-duration: .4s;
 }
 
 
@@ -349,7 +356,6 @@ PAGE 6 : AMAZONE ADRESSE
   position: relative;
   position: absolute;
   z-index: 9;
-
 }
 
 .pageWeb_Amazon_adresse img{
@@ -431,7 +437,8 @@ PAGE 7 : BANQUE CONNECTION
   position: relative;
   position: absolute;
   z-index: 10;
-
+  animation-name: opening;
+  animation-duration: .4s;
 }
 
 .pageWeb_banque_connection img{
@@ -513,7 +520,8 @@ PAGE 9 : BANQUE PAIEMENT
   position: relative;
   position: absolute;
   z-index: 11;
-
+  animation-name: opening;
+  animation-duration: .4s;
 }
 
 .pageWeb_banque_paiement img{
@@ -596,7 +604,7 @@ HACKER MODE : INVITE DE COMMANDE
   background-color: black;
   /*position: relative;*/
   width: 40%;
-  height : 300px;
+  height : 250px;
   z-index: 50;
 
 }
@@ -636,6 +644,17 @@ HACKER MODE : INVITE DE COMMANDE
   }
 }
 
+@keyframes opening {
+  0% {
+    height: 1%;
+    width: 1%;
+  }
+  100% {
+    height: 60%;
+    width: 60%;
+  }
+}
+
 /*
 AFFICHAGE DES PAGES
 */
@@ -650,10 +669,9 @@ div.nextPage{
   width:  40px;
   height: 20px;
   margin-top: 12px;
-
   background-color:black;
   border: thin 2px green;
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
   cursor: pointer;
 }
