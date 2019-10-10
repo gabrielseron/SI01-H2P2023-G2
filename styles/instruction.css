@@ -173,7 +173,8 @@ PAGE WEB 3 : CONNECTION A FB
 .pageWebGmail_FB_connection{
   height: auto;
   width:80%;
-  margin-top: 130px;
+  margin-top: 30px;
+  margin-left: 170px;
   display: flex;
   justify-content: flex-start;
   position: relative;
@@ -235,7 +236,9 @@ PAGE 4 : FB PARAMETRE
 .pageWeb_FB_parametre{
   height: auto;
   width:80%;
-  margin-top: 130px;
+  margin-top: 30px;
+  margin-top: 30px;
+  margin-left: 170px;
   display: flex;
   justify-content: flex-start;
   position: relative;
