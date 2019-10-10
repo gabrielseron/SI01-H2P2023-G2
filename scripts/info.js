@@ -14,12 +14,14 @@ window.scrollTo({ top: 0, behavior: 'smooth' })
 
 
 replay.addEventListener("mouseover",function(){
-  replay.style.backgroundColor='blue'
+  let retry = document.getElementById('retry')
+  retry.style.display='block'
 })
 
 replay.addEventListener("mouseout",function(){
-  replay.style.backgroundColor='red'
+  retry.style.display='none'
 })
+
 
 
     window.addEventListener(

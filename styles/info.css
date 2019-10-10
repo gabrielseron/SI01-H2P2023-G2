@@ -22,6 +22,38 @@ section{
    background-color:rgba(0, 0, 0, 0.5);
 }
 
+#replay{
+  position: absolute;
+  right: 4%;
+  top: 5%;
+  position: fixed;
+  z-index: 10;
+  border-radius: 70%;
+}
+
+#retry{
+  position: absolute;
+  position: fixed;
+  top: 15%;
+  right: 2%;
+  display: none;
+  color: #fff;
+text-shadow:
+  0 0 5px #fff,
+  0 0 10px #fff,
+  0 0 20px #fff,
+  0 0 40px #0ff,
+  0 0 80px #0ff,
+  0 0 90px #0ff,
+  0 0 100px #0ff,
+  0 0 150px #0ff;
+}
+.logo_game{
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
 
 #nerve_title>img{
   width: 1000px;
@@ -291,27 +323,9 @@ h4{
   margin-top: 50px;
 }
 
-#replay{
-  width: 150px;
-  height: 100px;
-  position: absolute;
-  right: 0;
-  background-color: red;
-  position: fixed;
-  color: white;
-  font-size: 30px;
-  z-index: 10;
-}
 
-#replay>a{
-  width: 100%;
-  height: 100%;
-  display: block;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  padding-top: 30px;
-}
+
+
 
 #scroll_top{
   padding: 30px;
