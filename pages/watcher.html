@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="../styles/watcher.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
   </head>
-  <body>
-
+    <div class="containerHeader">
+      <h1></h1>
+      <h2></h2>
+      <span></span>
+    </div>
     <div class="containerJoueursEnLigne">
       <h1>JOUEURS EN LIGNE</h1>
     </div>
@@ -74,19 +77,11 @@
       <div class="containerGifDefi">
         <h1>SÉLÉCTIONNEZ UN DÉFI QUE LE PLAYER DEVRA RÉALISER</h1>
       </div>
-
-
       <div class="chat">
-        <div class="message">Bienvenue dans le chat</div>
+        <div class="message" id="firstMsg">Bienvenue dans le chat, merci de rester courtois.</div>
+        <input type="text" id="msgUtilisateur" placeholder="Votre message"/>
+        <input type="button" id="msgUtilisateurButton" gonClick="valenter();" value="Envoyer" />
       </div>
-
-
-
-
-
-
-
-
     </div>
     <div class="containerMsgErreur">
       <div class="msgErreur">
