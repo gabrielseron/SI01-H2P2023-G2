@@ -265,3 +265,23 @@ msgUtilisateurButton.addEventListener(
   iMax++
   }
 )
+
+// SKIP EXPERIENCE
+
+const buttonSkipExperience=document.querySelector(".buttonSkipExperience")
+const skipExperiencePannel=document.querySelector(".skipExperiencePannel")
+const backButtonExperience=document.querySelector(".skipExperiencePannelChoice h4")
+
+buttonSkipExperience.addEventListener(
+  "click",
+  function(){
+    skipExperiencePannel.style.display="flex"
+  }
+)
+
+backButtonExperience.addEventListener(
+  "click",
+  function(){
+    skipExperiencePannel.style.display="none"
+  }
+)
