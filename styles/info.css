@@ -12,12 +12,11 @@ body{
   font-weight: bold;
 
 
-
 }
 
 section{
   width: 100%;
-  height: 750px;
+  height: 800px;
   overflow:hidden;
    background-color:rgba(0, 0, 0, 0.5);
 }
@@ -253,17 +252,22 @@ h4{
     padding:7px 15px;
     border-radius:3px;
     width:350px;
+    line-height: normal;
   }
   .bubble-text2{
       color: white;
       width: 300px;
       margin-top: 250px;
       margin-left: 100px;
+      line-height: normal;
+
     }
     .bubble-text3{
         color: white;
         width: 300px;
         margin-left: 100px;
+        line-height: normal;
+
 
       }
 
@@ -294,13 +298,14 @@ h4{
   position: fixed;
   left: 0;
   z-index:1;
+  bottom:5%;
 }
 .fa {
   padding: 20px;
   font-size: 80px;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
+  border-radius: 20%;
   margin-left: 25px;
 }
 .fa:hover {
@@ -335,4 +340,14 @@ h4{
   color: white;
   font-size: 30px;
   z-index: 10;
+}
+
+#droit{
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 700px;
+  margin-left: 400px;
+  text-align: center;
+  font-weight: lighter;
 }

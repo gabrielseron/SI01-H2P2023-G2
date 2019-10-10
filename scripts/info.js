@@ -35,7 +35,7 @@ replay.addEventListener("mouseout",function(){
          second_charactere.style.opacity='0'
 
        }
-       if(scrolled>300){
+       if(scrolled>200){
          resume.style.opacity="1"
          resume.style.transition="all 1s"
          resume.style.transform= "translateX(150px)";
@@ -47,7 +47,7 @@ replay.addEventListener("mouseout",function(){
          console.log(scrolled);
        }
 
-       if(scrolled>1000){
+       if(scrolled>1200){
          resume.style.opacity='0'
          resume.style.transform= "translateX(-300px)";
 
@@ -68,7 +68,7 @@ replay.addEventListener("mouseout",function(){
          third_charactere.style.transition="all 1s"
          third_charactere.style.transform= "translateX(-300px)";
        }
-       if(scrolled>1400){
+       if(scrolled>1600){
          third_charactere.style.opacity='1'
          third_charactere.style.transition="all 1s"
          third_charactere.style.transform= "translateX(100px)";
@@ -77,7 +77,7 @@ replay.addEventListener("mouseout",function(){
 
 
 
-       if(scrolled>1900){
+       if(scrolled>2300){
 
          first_charactere.style.opacity='0'
          first_charactere.style.transform="translateX(-300px)"

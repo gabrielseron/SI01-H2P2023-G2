@@ -36,6 +36,8 @@ PAGE WEB 1 : GMAIL INSCRIPTION
   position: relative;
   position: absolute;
   z-index: 4;
+  animation-name: opening;
+  animation-duration: .4s;
 }
 
 .pageWebGmail img{
@@ -103,6 +105,8 @@ PAGE WEB 2 : GMAIL ECRIRE UN EMAIL AU COMPLICE
   position: absolute;
   z-index: 4;
   margin-left: 450px;
+  animation-name: opening;
+  animation-duration: .4s;
 }
 
 .pageWebGmail_mail img{
@@ -130,6 +134,7 @@ textarea.message{
   border-color: white;
   resize: none;
   overflow: auto;
+  resize: none;
 }
 
 textarea.A{
@@ -142,6 +147,7 @@ textarea.A{
   border-color: white;
   resize: none;
   overflow: auto;
+  resize: none;
 }
 
 
@@ -180,6 +186,8 @@ PAGE WEB 3 : CONNECTION A FB
   position: relative;
   position: absolute;
   z-index: 6;
+  animation-name: opening;
+  animation-duration: .4s;
 }
 
 .pageWebGmail_FB_connection img{
@@ -209,7 +217,7 @@ textarea.FB{
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
   border-color: white;
-
+  resize: none;
 }
 
 div.submit_3{
@@ -292,7 +300,8 @@ PAGE 5 : AMAZON ARTICLE
   position: relative;
   position: absolute;
   z-index: 8;
-
+  animation-name: opening;
+  animation-duration: .4s;
 }
 
 
@@ -349,7 +358,6 @@ PAGE 6 : AMAZONE ADRESSE
   position: relative;
   position: absolute;
   z-index: 9;
-
 }
 
 .pageWeb_Amazon_adresse img{
@@ -374,7 +382,7 @@ PAGE 6 : AMAZONE ADRESSE
 }
 
 .container6_2{
-  margin-top: 154px;
+  margin-top: 180px;
   position: absolute;
   width: 245px;
   height: 45px;
@@ -407,7 +415,7 @@ div.submit_6 p{
   align-items: center;
 }
 
-textarea.amazon{
+input.amazon{
   margin-top: 27px;
   margin-left: 15px;
   width: 180px;
@@ -415,6 +423,7 @@ textarea.amazon{
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
   border-color: white;
+  resize: none;
 }
 
 /*
@@ -431,7 +440,8 @@ PAGE 7 : BANQUE CONNECTION
   position: relative;
   position: absolute;
   z-index: 10;
-
+  animation-name: opening;
+  animation-duration: .4s;
 }
 
 .pageWeb_banque_connection img{
@@ -490,7 +500,6 @@ textarea.banque{
   font-family: 'Roboto', 'Arial', sans-serif;
   border-color: white;
   resize: none;
-
 }
 
 div.submit_7 p{
@@ -513,7 +522,8 @@ PAGE 9 : BANQUE PAIEMENT
   position: relative;
   position: absolute;
   z-index: 11;
-
+  animation-name: opening;
+  animation-duration: .4s;
 }
 
 .pageWeb_banque_paiement img{
@@ -577,6 +587,7 @@ textarea.banque-paiement{
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
   border-color: white;
+  resize: none;
 }
 
 
@@ -596,7 +607,7 @@ HACKER MODE : INVITE DE COMMANDE
   background-color: black;
   /*position: relative;*/
   width: 40%;
-  height : 300px;
+  height : 250px;
   z-index: 50;
 
 }
@@ -636,6 +647,17 @@ HACKER MODE : INVITE DE COMMANDE
   }
 }
 
+@keyframes opening {
+  0% {
+    height: 1%;
+    width: 1%;
+  }
+  100% {
+    height: 60%;
+    width: 60%;
+  }
+}
+
 /*
 AFFICHAGE DES PAGES
 */
@@ -650,10 +672,9 @@ div.nextPage{
   width:  40px;
   height: 20px;
   margin-top: 12px;
-
   background-color:black;
   border: thin 2px green;
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
   cursor: pointer;
 }
