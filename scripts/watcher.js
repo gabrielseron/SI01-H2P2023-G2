@@ -7,7 +7,10 @@ const containerMsgErreur = document.querySelector(".containerMsgErreur")
 const espaceDefi = document.querySelector(".espaceDefi")
 const gifDefiText=document.querySelector(".containerGifDefi h1")
 const containerHeader=document.querySelector(".containerHeader")
+const defiSound=document.querySelector("#defiSound")
+
 // RANDOM PSEUDO
+
 
 for(let i=0; i<3; i++){
 
@@ -145,6 +148,7 @@ for(let i=0; i<defi.length; i++){
   defi[0].addEventListener(
     "click",
     function(){
+      defiSound.play()
       containerGifDefi.classList.add("bgKiss")
       containerGifDefi.classList.remove("bgTatouage")
       containerGifDefi.classList.remove("bgChute")
@@ -170,6 +174,7 @@ for(let i=0; i<defi.length; i++){
   defi[1].addEventListener(
     "click",
     function(){
+      defiSound.play()
       containerGifDefi.classList.add("bgTatouage")
       containerGifDefi.classList.remove("bgChute")
       containerGifDefi.classList.remove("bgKiss")
@@ -194,6 +199,7 @@ for(let i=0; i<defi.length; i++){
   defi[2].addEventListener(
     "click",
     function(){
+      defiSound.play()
       containerGifDefi.classList.add("bgChute")
       containerGifDefi.classList.remove("bgTatouage")
       containerGifDefi.classList.remove("bgKiss")

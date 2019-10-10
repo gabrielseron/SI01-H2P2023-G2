@@ -247,7 +247,7 @@ body{
   padding-left: 20px;
   background-color: black;
   animation-name: disparition;
-  animation-duration: 13s;
+  animation-duration: 12s;
   animation-fill-mode: forwards;
 }
 
@@ -271,13 +271,13 @@ body{
   width : 70%;
   height: 55px;
   position: absolute;
+  background-color: black;
   bottom:0%;
   z-index: 1;
   padding-left: 20px;
-}
-
-.containerButtonMsgUtilisateur{
-
+  border-radius: 2%;
+  color : white;
+  font-size: 20px;
 }
 
 #msgUtilisateurButton{
@@ -287,7 +287,9 @@ body{
   position: absolute;
   bottom : 0%;
   z-index: 1;
-  background-color: red;
+  background-color: black;
+  color : white;
+  font-size: 20px;
 }
 
 .containerMsgErreur{
