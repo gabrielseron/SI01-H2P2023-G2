@@ -9,6 +9,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  font-weight: bold;
 
 
 
@@ -19,6 +20,38 @@ section{
   height: 750px;
   overflow:hidden;
    background-color:rgba(0, 0, 0, 0.5);
+}
+
+#replay{
+  position: absolute;
+  right: 4%;
+  top: 5%;
+  position: fixed;
+  z-index: 10;
+  border-radius: 70%;
+}
+
+#retry{
+  position: absolute;
+  position: fixed;
+  top: 15%;
+  right: 2%;
+  display: none;
+  color: #fff;
+text-shadow:
+  0 0 5px #fff,
+  0 0 10px #fff,
+  0 0 20px #fff,
+  0 0 40px #0ff,
+  0 0 80px #0ff,
+  0 0 90px #0ff,
+  0 0 100px #0ff,
+  0 0 150px #0ff;
+}
+.logo_game{
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
 }
 
 
@@ -208,44 +241,60 @@ h4{
   }
 }
 
+#bubble{
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+}
+
 .bubble-text{
-  margin-left: 100px;
-  background:#FFFFFF;
-   color:#000000;
+    margin-left: 100px;
+    color: white;
     padding:7px 15px;
     border-radius:3px;
     width:350px;
   }
   .bubble-text2{
-    margin-left: 1000px;
-    background:#FFFFFF;
-     color:#000000;
-      padding:7px 15px;
-      border-radius:3px;
-      width:350px;
+      color: white;
+      width: 300px;
+      margin-top: 250px;
+      margin-left: 100px;
     }
-.bubble-text::after{
-content:"";
-border-right:20px solid transparent;
-border-top: 20px solid #ffffff;
-position: absolute;
-}
-.bubble-text2::after{
-content:"";
-border-left:20px solid transparent;
+    .bubble-text3{
+        color: white;
+        width: 300px;
+        margin-left: 100px;
 
-border-top: 20px solid #ffffff;
-position: absolute;
-}
+      }
+
+      .guillemet{
+        font-size: 100px;
+
+      }
+      #apostrophe_bas{
+        margin-left: 250px;
+      }
+      #apostrophe_bas>img{
+        width: 20px;
+        height: auto;
+      }
+
+    #apostrophe{
+      width: 20px;
+      height: auto;
+    }
+
 
 .avatar>img{
   width: 100px;
   height: auto;
 }
 .social_network{
-  display: flex;
-  justify-content: space-between;
-  width: 200px;
+  position:absolute;
+  position: fixed;
+  left: 0;
+  bottom: 1;
+  z-index:1;
 }
 .fa {
   padding: 20px;
@@ -271,30 +320,12 @@ position: absolute;
   color: white;
 }
 #video{
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
-#replay{
-  width: 150px;
-  height: 100px;
-  position: absolute;
-  right: 0;
-  background-color: red;
-  position: fixed;
-  color: white;
-  font-size: 30px;
-  z-index: 10;
-}
 
-#replay>a{
-  width: 100%;
-  height: 100%;
-  display: block;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  padding-top: 30px;
-}
+
+
 
 #scroll_top{
   padding: 30px;

@@ -44,7 +44,6 @@ body{
   width : 100%;
   display: flex;
   justify-content: center;
-  flex-direction: clumn;
   margin-top : 20px;
 }
 
@@ -154,7 +153,6 @@ body{
   z-index: 1;
   display: flex;
   justify-content: center;
-  flex-direction: center;
   align-items: center;
   animation-name : shake;
   animation-duration: .4s;
@@ -211,7 +209,6 @@ body{
   left : 15%;
   display: none;
   justify-content: center;
-  flex-direction: center;
   align-items: center;
   animation-name : shake;
   animation-duration: .4s;

@@ -3,7 +3,7 @@ let casting=document.getElementById('casting_description')
 let video=document.getElementById('video')
 let replay=document.getElementById('replay')
 let scroll_top=document.getElementById('scroll_top')
-
+let critique= document.getElementById('bubble')
 
 
 scroll_top.addEventListener('click',function(){
@@ -14,12 +14,14 @@ window.scrollTo({ top: 0, behavior: 'smooth' })
 
 
 replay.addEventListener("mouseover",function(){
-  replay.style.backgroundColor='blue'
+  let retry = document.getElementById('retry')
+  retry.style.display='block'
 })
 
 replay.addEventListener("mouseout",function(){
-  replay.style.backgroundColor='red'
+  retry.style.display='none'
 })
+
 
 
     window.addEventListener(
@@ -89,6 +91,9 @@ replay.addEventListener("mouseout",function(){
          video.style.opacity='1'
          video.style.transition="all 1s"
          video.style.transform="translateX(-50px)"
+         critique.style.opacity='0'
+         critique.style.transition="all 1s"
+         critique.style.transform="translateY(350px)"
 
        }
 if(scrolled>2800){
@@ -98,6 +103,11 @@ if(scrolled>2800){
   video.style.opacity='1'
   video.style.transition="all 1s"
   video.style.transform="translateX(850px)"
+  critique.style.opacity='1'
+  critique.style.transition="all 1s"
+  critique.style.transform="translateY(-20px)"
+
+
 }
 
        /*

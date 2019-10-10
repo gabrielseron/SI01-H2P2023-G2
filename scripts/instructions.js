@@ -13,7 +13,6 @@ let txtInstructionsItems = [txtInstructionsONE,txtInstructionsTWO,txtInstruction
 const buttons = document.querySelectorAll('body .button')
 let x=0
 let y=1
-let nextButton = buttons[y-1]
 let txtInstructionsBlock = txtinstructionsBlocks[0]
 let txtInstructions = txtInstructionsItems[0]
 
@@ -22,16 +21,18 @@ const pages = document.querySelectorAll('body .pageDisplay')
 console.log(buttons)
 //FONCTION POUR AFFICHER L'INSTRUCTION SUIVANTE ET LA PAGE WEB
 
-nextButton.addEventListener('click',
-function(){
-   txtInstructionsBlock.classList.add('txtInstructions')
-   txtInstructionsBlock = txtinstructionsBlocks[y]
-   txtInstructions = txtInstructionsItems[y]
-   pages[y-1].classList.remove('pageDisplay')
-   y++
-   x=0
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click',
+  function(){
+      txtInstructionsBlock.classList.add('txtInstructions')
+      txtInstructionsBlock = txtinstructionsBlocks[y]
+      txtInstructions = txtInstructionsItems[y]
+      pages[y-1].classList.remove('pageDisplay')
+      y++
+      x=0
+  console.log(buttons[i])
 })
-
+}
 
 
 // FONCTION D'AFFICHAGE DE L'INVITE DE COMMANDE

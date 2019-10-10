@@ -68,7 +68,6 @@ input.little{
   margin: 10px;
   margin-bottom: 20px;
   background-color: white;
-
 }
 .line {
   margin-top: 350px;
@@ -78,16 +77,17 @@ input.little{
   display: flex;
   justify-content: flex-end;
 }
-input.submit{
+div.submit.button{
   width: 60px;
   height: 20px;
-  margin-top: 25px;
   text-transform: uppercase;
   color: white;
   background-color:#1A73E8;
-  font-size: 7px;
+  font-size: 6px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
+  border-radius: 1px;
 }
 
 /*
@@ -128,6 +128,8 @@ textarea.message{
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
   border-color: white;
+  resize: none;
+  overflow: auto;
 }
 
 textarea.A{
@@ -138,6 +140,8 @@ textarea.A{
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
   border-color: white;
+  resize: none;
+  overflow: auto;
 }
 
 
@@ -148,16 +152,17 @@ textarea.A{
   justify-content: flex-start;
 }
 
-input.submit_2{
+div.submit_2{
   width: 90px;
   height: 30px;
   margin-top: 25px;
   text-transform: uppercase;
   color: white;
   background-color:#1A73E8;
-  font-size: 7px;
+  font-size: 9px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 
@@ -168,7 +173,8 @@ PAGE WEB 3 : CONNECTION A FB
 .pageWebGmail_FB_connection{
   height: auto;
   width:80%;
-  margin-top: 130px;
+  margin-top: 30px;
+  margin-left: 170px;
   display: flex;
   justify-content: flex-start;
   position: relative;
@@ -183,15 +189,15 @@ PAGE WEB 3 : CONNECTION A FB
 
 .container3{
   margin-top: 31px;
-  position: absolute;
-  width: 500px;
-  height: 400px;
-  display: flex;
-  justify-content:flex-start;
-  flex-flow: column wrap;
-  margin-left: 370px;
-  display: flex;
-  flex-direction: row;
+position: absolute;
+width: 500px;
+height: 400px;
+display: flex;
+justify-content:flex-start;
+flex-flow: column wrap;
+margin-left: 370px;
+display: flex;
+flex-direction: row;
 
 }
 
@@ -203,9 +209,10 @@ textarea.FB{
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
   border-color: white;
+
 }
 
-input.submit_3{
+div.submit_3{
   width: 70px;
   height: 15px;
   margin-top: 12px;
@@ -216,6 +223,10 @@ input.submit_3{
   font-size: 7px;
   display: flex;
   justify-content: center;
+
+}
+div.submit_3 p{
+  margin-top: 6px;
 }
 
 /*
@@ -225,12 +236,14 @@ PAGE 4 : FB PARAMETRE
 .pageWeb_FB_parametre{
   height: auto;
   width:80%;
-  margin-top: 130px;
+  margin-top: 30px;
+  margin-top: 30px;
+  margin-left: 170px;
   display: flex;
   justify-content: flex-start;
   position: relative;
   position: absolute;
-  z-index: 4;
+  z-index: 7;
 }
 
 .pageWeb_FB_parametre img{
@@ -251,11 +264,10 @@ PAGE 4 : FB PARAMETRE
   flex-direction: row;
 }
 
-input.submit_4{
+div.submit_4{
   width: 100%;
   height: 25px;
   margin-top: 12px;
-
   text-transform: uppercase;
   color: white;
   background-color:#4267B2;
@@ -266,7 +278,7 @@ input.submit_4{
 
 
 /*
-PAGE 5 : FB PARAMETRE
+PAGE 5 : AMAZON ARTICLE
 */
 
 .pageWeb_Amazon_panier{
@@ -277,7 +289,7 @@ PAGE 5 : FB PARAMETRE
   justify-content: center;
   position: relative;
   position: absolute;
-  z-index: 5;
+  z-index: 8;
 
 }
 
@@ -288,6 +300,7 @@ PAGE 5 : FB PARAMETRE
   border : 1px solid;
   border-color: black;
   border-radius: 4px;
+  z-index: 8;
 }
 
 
@@ -302,9 +315,10 @@ PAGE 5 : FB PARAMETRE
   margin-left: 294px;
   display: flex;
   flex-direction: row;
+  z-index: 9;
 }
 
-input.submit_5{
+div.submit_5{
   width: 100%;
   height: 25px;
   margin-top: 12px;
@@ -314,6 +328,10 @@ input.submit_5{
   display: flex;
   justify-content: center;
   border-color: black;
+}
+
+div.submit_5 p{
+  margin-top: 6px;
 }
 
 /*
@@ -327,7 +345,7 @@ PAGE 6 : AMAZONE ADRESSE
   justify-content: center;
   position: relative;
   position: absolute;
-  z-index: 6;
+  z-index: 9;
 
 }
 
@@ -364,9 +382,10 @@ PAGE 6 : AMAZONE ADRESSE
   display: flex;
   flex-direction: row;
 
+
 }
 
-input.submit_6{
+div.submit_6{
   width: 100%;
   height: 30px;
   margin-top: 12px;
@@ -377,6 +396,11 @@ input.submit_6{
   justify-content: center;
   border-color: black;
   text-transform: uppercase;
+  align-items: center;
+}
+div.submit_6 p{
+  display: flex;
+  align-items: center;
 }
 
 textarea.amazon{
@@ -394,6 +418,7 @@ PAGE 7 : BANQUE CONNECTION
 */
 
 .pageWeb_banque_connection{
+  margin-left: 130px;
   height: auto;
   width:90%;
   margin-top: 130px;
@@ -401,7 +426,7 @@ PAGE 7 : BANQUE CONNECTION
   justify-content: center;
   position: relative;
   position: absolute;
-  z-index: 6;
+  z-index: 10;
 
 }
 
@@ -425,7 +450,7 @@ PAGE 7 : BANQUE CONNECTION
   flex-direction: row;
 }
 
-input.submit_7{
+div.submit_7{
   width: 100%;
   height: 40px;
   margin-top: 12px;
@@ -452,14 +477,20 @@ input.submit_7{
 }
 
 textarea.banque{
-  margin-top: 27px;
+  margin-top: 25px;
   margin-left: 5px;
-  width: 250px;
-  height: 18px;
+  width: 270px;
+  height: 25px;
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
   border-color: white;
+  resize: none;
 
+}
+
+div.submit_7 p{
+  display: flex;
+  align-items: center;
 }
 
 /*
@@ -467,6 +498,8 @@ PAGE 9 : BANQUE PAIEMENT
 */
 
 .pageWeb_banque_paiement{
+  margin-top: 80px;
+  margin-left: 40px;
   height: auto;
   width:90%;
   margin-top: 130px;
@@ -474,7 +507,7 @@ PAGE 9 : BANQUE PAIEMENT
   justify-content: center;
   position: relative;
   position: absolute;
-  z-index: 6;
+  z-index: 11;
 
 }
 
@@ -498,7 +531,7 @@ PAGE 9 : BANQUE PAIEMENT
   flex-direction: row;
 }
 
-input.submit_9{
+div.submit_9{
   width: 100%;
   height: 40px;
   margin-top: 12px;
@@ -509,6 +542,11 @@ input.submit_9{
   justify-content: center;
   text-transform: uppercase;
   border-radius: 20px;
+}
+
+div.submit_9 p{
+  display: flex;
+  align-items: center;
 }
 
 
@@ -525,7 +563,7 @@ input.submit_9{
   flex-direction: row;
 }
 
-textarea.amazon{
+textarea.banque-paiement{
   margin-top: 27px;
   margin-left: 55px;
   width: 160px;
@@ -533,4 +571,63 @@ textarea.amazon{
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
   border-color: white;
+}
+/*
+HACKER MODE : INVITE DE COMMANDE
+*/
+.containerBlackPad{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 20;
+}
+.blackPad{
+  background-color: black;
+  /*position: relative;*/
+  width: 40%;
+  height : 300px;
+  z-index: 50;
+
+}
+.txtWriting{
+  /*display: none;*/
+  /*position: absolute;*/
+  animation : type 3.7s steps(32);
+  overflow : hidden;
+  white-space : nowrap;
+  border-right: 2px solid green;
+  width : 80ch;
+  color : green;
+  font-family: 'Space Mono', "Arial", sans-serif;
+  padding: 2px 20px 2px 10px;
+  margin-right: 16px;
+  z-index: 50;
+}
+.txtDisplay{
+  display: block;
+  color : green;
+  font-family: 'Space Mono', "Arial", sans-serif;
+  padding: 2px 20px 2px 10px;
+  margin-right: 16px;
+  z-index: 50;
+}
+.txtInstructions{
+  display: none;
+}
+@keyframes type {
+  0% {
+    width:0ch;
+  }
+  100% {
+    width: 80ch;
+  }
+}
+
+/*
+AFFICHAGE DES PAGES
+*/
+.pageDisplay{
+  display: none;
 }
