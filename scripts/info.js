@@ -15,11 +15,17 @@ window.scrollTo({ top: 0, behavior: 'smooth' })
 
 replay.addEventListener("mouseover",function(){
   let retry = document.getElementById('retry')
+  let logo=document.querySelector('.logo_game')
   retry.style.display='block'
+  logo.classList.add('box_shadow')
 })
 
 replay.addEventListener("mouseout",function(){
+  let logo=document.querySelector('.logo_game')
+
   retry.style.display='none'
+  logo.classList.remove('box_shadow')
+
 })
 
 
