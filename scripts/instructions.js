@@ -8,10 +8,15 @@ const txtInstructionsSIX = document.querySelectorAll('.six p')
 const txtInstructionsSEVEN = document.querySelectorAll('.seven p')
 const txtInstructionsHEIGHT = document.querySelectorAll('.height p')
 const txtInstructionsNINE = document.querySelectorAll('.nine p')
-let txtInstructionsItems = [txtInstructionsONE,txtInstructionsTWO,txtInstructionsTHREE,txtInstructionsFOUR,txtInstructionsFIVE,txtInstructionsSIX,txtInstructionsSEVEN,txtInstructionsHEIGHT,txtInstructionsNINE]
+const txtInstructionsTEN = document.querySelectorAll('.ten p')
+let txtInstructionsItems = [txtInstructionsONE,txtInstructionsTWO,txtInstructionsTHREE,txtInstructionsFOUR,txtInstructionsFIVE,txtInstructionsSIX,txtInstructionsSEVEN,txtInstructionsHEIGHT,txtInstructionsNINE,txtInstructionsTEN]
+
+const page1 = document.querySelector('.pageWebGmail')
+
+const body = document.querySelector('body')
 
 const buttons = document.querySelectorAll('body .button')
-let x=0
+
 let y=1
 let txtInstructionsBlock = txtinstructionsBlocks[0]
 let txtInstructions = txtInstructionsItems[0]
@@ -36,7 +41,7 @@ for (var i = 0; i < buttons.length; i++) {
 
 
 // FONCTION D'AFFICHAGE DE L'INVITE DE COMMANDE
-
+let x=0
 let txtInterval = setInterval(writing, 2000)
 
   function writing(){
@@ -54,4 +59,11 @@ let txtInterval = setInterval(writing, 2000)
       }
     }
 
-  //FONCTION D'AFFICHAGE DES PAGES WEB
+buttons[8].addEventListener('click',
+function(){
+     for (var j = 0; j < pages.length; j++) {
+       pages[j].classList.add('pageDisplay')
+     }
+     page1.classList.add('pageDisplay')
+     x=0
+})
