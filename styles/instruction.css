@@ -650,10 +650,25 @@ div.nextPage{
   width:  40px;
   height: 20px;
   margin-top: 12px;
-  color: green;
+
   background-color:black;
   border: thin 2px green;
   font-size: 10px;
   text-transform: uppercase;
   cursor: pointer;
+}
+div.nextPage a{
+  color: green;
+  padding: 10px;
+  font-size: 13px;
+}
+div.nextPage a:hover{
+  color: green;
+  padding: 20px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.buttonDisplay{
+  display: none;
 }

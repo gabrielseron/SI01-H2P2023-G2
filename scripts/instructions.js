@@ -12,6 +12,7 @@ const txtInstructionsTEN = document.querySelectorAll('.ten p')
 let txtInstructionsItems = [txtInstructionsONE,txtInstructionsTWO,txtInstructionsTHREE,txtInstructionsFOUR,txtInstructionsFIVE,txtInstructionsSIX,txtInstructionsSEVEN,txtInstructionsHEIGHT,txtInstructionsNINE,txtInstructionsTEN]
 
 const page1 = document.querySelector('.pageWebGmail')
+const nextPage = document.querySelector('.nextPage')
 
 const body = document.querySelector('body')
 
@@ -66,4 +67,5 @@ function(){
      }
      page1.classList.add('pageDisplay')
      x=0
+     nextPage.classList.remove('buttonDisplay')
 })
