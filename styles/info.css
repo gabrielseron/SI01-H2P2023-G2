@@ -336,3 +336,13 @@ h4{
   font-size: 30px;
   z-index: 10;
 }
+
+#droit{
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 700px;
+  margin-left: 400px;
+  text-align: center;
+  font-weight: lighter;
+}
