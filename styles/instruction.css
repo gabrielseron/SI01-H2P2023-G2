@@ -422,7 +422,7 @@ input.amazon{
   height: 13px;
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
-  border-color: white;
+  border-color: black;
   resize: none;
 }
 
@@ -498,7 +498,7 @@ textarea.banque{
   height: 25px;
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
-  border-color: white;
+  border-color: black;
   resize: none;
 }
 
@@ -535,7 +535,7 @@ PAGE 9 : BANQUE PAIEMENT
 }
 
 .container9{
-  margin-top: 290px;
+  margin-top: 400px;
   position: absolute;
   width: 190px;
   height: 45px;
@@ -580,13 +580,13 @@ div.submit_9 p{
 }
 
 textarea.banque-paiement{
-  margin-top: 27px;
-  margin-left: 55px;
-  width: 160px;
-  height: 9px;
+  margin-top: 25px;
+  margin-left: 5px;
+  width: 270px;
+  height: 25px;
   background-color: white;
   font-family: 'Roboto', 'Arial', sans-serif;
-  border-color: white;
+  border-color: black;
   resize: none;
 }
 
