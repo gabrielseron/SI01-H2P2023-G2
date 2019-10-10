@@ -9,6 +9,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  font-weight: bold;
 
 
 
@@ -208,44 +209,60 @@ h4{
   }
 }
 
+#bubble{
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+}
+
 .bubble-text{
-  margin-left: 100px;
-  background:#FFFFFF;
-   color:#000000;
+    margin-left: 100px;
+    color: white;
     padding:7px 15px;
     border-radius:3px;
     width:350px;
   }
   .bubble-text2{
-    margin-left: 1000px;
-    background:#FFFFFF;
-     color:#000000;
-      padding:7px 15px;
-      border-radius:3px;
-      width:350px;
+      color: white;
+      width: 300px;
+      margin-top: 250px;
+      margin-left: 100px;
     }
-.bubble-text::after{
-content:"";
-border-right:20px solid transparent;
-border-top: 20px solid #ffffff;
-position: absolute;
-}
-.bubble-text2::after{
-content:"";
-border-left:20px solid transparent;
+    .bubble-text3{
+        color: white;
+        width: 300px;
+        margin-left: 100px;
 
-border-top: 20px solid #ffffff;
-position: absolute;
-}
+      }
+
+      .guillemet{
+        font-size: 100px;
+
+      }
+      #apostrophe_bas{
+        margin-left: 250px;
+      }
+      #apostrophe_bas>img{
+        width: 20px;
+        height: auto;
+      }
+
+    #apostrophe{
+      width: 20px;
+      height: auto;
+    }
+
 
 .avatar>img{
   width: 100px;
   height: auto;
 }
 .social_network{
-  display: flex;
-  justify-content: space-between;
-  width: 200px;
+  position:absolute;
+  position: fixed;
+  left: 0;
+  bottom: 1;
+  z-index:1;
 }
 .fa {
   padding: 20px;
@@ -271,7 +288,7 @@ position: absolute;
   color: white;
 }
 #video{
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #replay{
