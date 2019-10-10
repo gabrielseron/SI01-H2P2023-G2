@@ -156,7 +156,7 @@ body{
   align-items: center;
   animation-name : shake;
   animation-duration: .4s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
 }
 
 @keyframes shake{
@@ -213,6 +213,10 @@ body{
   animation-name : shake;
   animation-duration: .4s;
   animation-iteration-count: 2;
+}
+
+video{
+  width : 90%;
 }
 
 .playButton{
@@ -299,4 +303,61 @@ body{
 
 .buttonBack:hover{
   background-color: red
+}
+
+
+
+/* SKIP BUTTON */
+
+.buttonSkipExperience{
+  position: absolute;
+  top : 0%;
+  left : -10%;
+  width : 200px;
+  height: 50px;
+  border : 1px solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonSkipExperience:hover{
+  left : 0%;
+}
+
+.skipExperiencePannel{
+  border : 2px solid #F3F302;
+  width : 50%;
+  height: 50%;
+  background: black;
+  position: absolute;
+  top : 25%;
+  left : 25%;
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name : shake;
+  animation-duration: .4s;
+  animation-iteration-count: 1;
+}
+
+.skipExperiencePannelChoice{
+  display: flex;
+  justify-content: space-around;
+}
+
+.skipExperiencePannel a{
+  color : white;
+  text-decoration: none;
+}
+
+.skipExperiencePannel h3, .skipExperiencePannel h4{
+  margin: 0px 30px;
+  font-size: 30px;
+}
+
+.skipExperiencePannel a:hover, .skipExperiencePannel h4:hover{
+  color : red;
 }
