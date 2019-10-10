@@ -62,16 +62,6 @@ h1 {
   justify-content: center;
 }
 
-.exit {
-  color: red;
-  text-decoration: none;
-  padding-bottom: 150px;
-  position: absolute;
-  top: 600px;
-  left: 49%;
-  font-size: 20px
-}
-
 .txt1 {
   position: absolute;
   top: 35%;

@@ -16,7 +16,6 @@ function progressBarUse() {
       clearInterval(progressInterval)
       document.querySelector('#txtLog').classList.remove('hidden');
       document.querySelector('.go').classList.remove('hidden');
-      document.querySelector('.exit').classList.remove('hidden');
     }
   }
 
