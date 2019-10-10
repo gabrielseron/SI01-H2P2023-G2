@@ -307,7 +307,6 @@ body{
   z-index: 1;
   display: flex;
   justify-content: center;
-  flex-direction: center;
   align-items: center;
   animation-name : shake;
   animation-duration: .4s;
